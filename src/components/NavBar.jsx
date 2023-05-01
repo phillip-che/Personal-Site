@@ -1,21 +1,23 @@
+import "../styles/NavBar.css";
+
 const NavBar = () => {
     return (
-        <>
-            <ul className="navbar">
+        <div id="navbar">
+            <ul>
                 <li className="navbar-item">
-                    home
+                    <a href="#home" class="effect-underline">/home</a>
                 </li>
                 <li className="navbar-item">
-                    projects
+                    <a href="#about" class="effect-underline">/about</a>
                 </li>
                 <li className="navbar-item">
-                    about
+                    <a href="#projects" class="effect-underline">/projects</a>
                 </li>
                 <li className="navbar-item">
-                    contact
+                    <a href="#" class="effect-underline">/contact</a>
                 </li>
             </ul>
-        </>
+        </ div>
     )
 }
 

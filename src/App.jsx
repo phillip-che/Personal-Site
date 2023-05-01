@@ -1,20 +1,12 @@
 import { useState } from 'react'
 import './App.css'
+import Intro from './components/Intro'
 function App() {
 
   return (
-    <>
-      <div>
-      Third-year computer science student seeking software engineering internships where I can best apply my technical skills and passion for technology to solve complex problems and contribute to a team-oriented environment that cultivates growth.
-      </div>
-      <div class="wrapper">
-        <h1 align="center"><a href="#" class="effect-underline">projects</a></h1>
-        <h1 align="center"><a href="#" class="effect-underline">contact</a></h1>
-        <h1 align="center"><a href="#" class="effect-underline">about</a></h1>
-        {/* <h1 align="center"><a href="#" class="effect-box">box</a></h1>
-        <h1 align="center"><a href="#" class="effect-shine">shine</a></h1> */}
-      </div>
-    </>
+    <div className="app">
+      <Intro />
+    </div>
   )
 }
 

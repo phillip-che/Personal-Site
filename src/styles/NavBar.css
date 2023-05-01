@@ -1,0 +1,11 @@
+#navbar {
+    position: absolute;
+    right: 5%;
+    top: 50%;
+    transition: all .2s ease-in-out;
+}
+
+.navbar-item {
+    padding-bottom: 5px;
+    list-style: none;
+}
