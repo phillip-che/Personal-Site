@@ -1,7 +1,7 @@
 #navbar {
     position: absolute;
     right: 5%;
-    top: 50%;
+    bottom: 7.5%;
     transition: all .2s ease-in-out;
 }
 

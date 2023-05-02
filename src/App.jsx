@@ -1,6 +1,6 @@
-import { useState } from 'react'
 import './App.css'
 import Intro from './components/Intro'
+
 function App() {
 
   return (

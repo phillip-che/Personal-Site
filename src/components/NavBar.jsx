@@ -1,7 +1,9 @@
 import "../styles/NavBar.css";
+import { Fade } from "react-awesome-reveal";
 
 const NavBar = () => {
     return (
+        <Fade>
         <div id="navbar">
             <ul>
                 <li className="navbar-item">
@@ -18,6 +20,7 @@ const NavBar = () => {
                 </li>
             </ul>
         </ div>
+        </Fade>
     )
 }
 

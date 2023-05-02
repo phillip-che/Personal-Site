@@ -20,6 +20,7 @@ body {
 
 a {
   color: #fff;
+  font-weight: 1000;
   text-decoration: none;
   display: inline-block;
   position: relative;

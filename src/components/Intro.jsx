@@ -1,32 +1,39 @@
 import "../styles/Intro.css";
 import Typewriter from "typewriter-effect";
+import { Fade } from "react-awesome-reveal";
 
 const Intro = () => {
     return (
+        <Fade triggerOnce direction="up" cascade>
         <div id="intro">
-            <Typewriter 
+            <span className="name">phillip che</span>
+            {/* <Typewriter 
             onInit={(typewriter) => {
                 typewriter
                 .changeDelay(75)
-                .typeString("hi, <strong><span style='color: #E94560;'> phillip <span></strong> here.")
+                .typeString("hi, <strong><span style='color: #E94560;'> phillip <span></strong> here")
                 .start();
             }}
-            />
+            /> */}
+            
             <div className="description">
                 <span> I code occasionally. </span>
-                {/* <span> I'm a full time </span>
-                <div className="roles">          
-                    <Typewriter
-                    options={{
-                        strings: ['student', 'developer', 'reseller'],
-                        autoStart: true,
-                        loop: true
-                    }}
-                    />
-                </div> */}
+                <div className="bio">
+                    <span>full time&nbsp;</span>
+                    <div className="roles">          
+                        <Typewriter
+                        options={{
+                            strings: ['student.', 'developer.', 'reseller.'],
+                            autoStart: true,
+                            loop: true,
+                        }}
+                        />
+                    </div>
+                </div>
             </div>
             
         </div>
+        </Fade>
     )
 }
 
