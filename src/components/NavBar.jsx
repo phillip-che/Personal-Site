@@ -1,7 +1,7 @@
 import "../styles/NavBar.css";
 import { Fade } from "react-awesome-reveal";
 
-const NavBar = () => {
+const NavBar = ({setOnAboutHover, setOnProjectsHove}) => {
     return (
         <Fade>
         <div id="navbar">
@@ -10,14 +10,20 @@ const NavBar = () => {
                     <a href="#home" class="effect-underline">/home</a>
                 </li>
                 <li className="navbar-item">
-                    <a href="#about" class="effect-underline">/about</a>
+                    <a href="#about" class="effect-underline"
+                    onMouseEnter={() => setOnAboutHover(true)}
+                    onMouseLeave={() => setOnAboutHover(false)}
+                    >/about</a>
                 </li>
                 <li className="navbar-item">
-                    <a href="#projects" class="effect-underline">/projects</a>
+                    <a href="#projects" class="effect-underline"
+                    onMouseEnter={() => setOnProjectsHove(true)}
+                    onMouseLeave={() => setOnProjectsHove(false)}
+                    >/projects</a>
                 </li>
-                <li className="navbar-item">
+                {/* <li className="navbar-item">
                     <a href="#" class="effect-underline">/contact</a>
-                </li>
+                </li> */}
             </ul>
         </ div>
         </Fade>

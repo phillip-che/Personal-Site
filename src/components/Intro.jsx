@@ -6,7 +6,8 @@ const Intro = () => {
     return (
         <Fade triggerOnce direction="up" cascade>
         <div id="intro">
-            <span className="name">phillip che</span>
+            hi, <span className="name">phillip</span> here
+            {/* <span className="name">phillip che</span> */}
             {/* <Typewriter 
             onInit={(typewriter) => {
                 typewriter
@@ -30,8 +31,7 @@ const Intro = () => {
                         />
                     </div>
                 </div>
-            </div>
-            
+            </div>   
         </div>
         </Fade>
     )

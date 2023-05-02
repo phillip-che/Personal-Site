@@ -1,11 +1,24 @@
 import './App.css'
 import Intro from './components/Intro'
+import NavBar from './components/NavBar'
+import About from './components/About'
+import Projects from './components/Projects'
+import { useState } from 'react'
+import { Fade } from 'react-awesome-reveal'
 
 function App() {
+
+  const [onAboutHover, setOnAboutHover] = useState(false);
+  const [onProjectsHover, setOnProjectsHover] = useState(false);
 
   return (
     <div className="app">
       <Intro />
+      <NavBar setOnAboutHover={setOnAboutHover} setOnProjectsHove={setOnProjectsHover} />
+        <div className="section-container">
+          {onAboutHover && <About />}
+          {onProjectsHover && <Projects />}
+        </div>
     </div>
   )
 }
