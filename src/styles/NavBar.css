@@ -1,11 +1,14 @@
 #navbar {
     position: fixed;
-    right: 5%;
-    bottom: 7.5%;
+    /* right: 5%;
+    bottom: 7.5%; */
+    left: 13%;
+    margin-top: 20px;
     transition: all .2s ease-in-out;
 }
 
 .navbar-item {
-    padding-bottom: 5px;
+    padding-bottom: 10px;
+    font-size: 25px;
     list-style: none;
 }
