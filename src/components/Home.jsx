@@ -2,9 +2,10 @@ import "../styles/Home.css";
 import { Fade } from "react-awesome-reveal";
 const Home = () => {
     return (
-        <Fade direction="right" cascade>
+        <Fade duration={2000} cascade>
             <div>
-                HOME
+                <h1>/home</h1>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
             </div>
         </Fade>
     )

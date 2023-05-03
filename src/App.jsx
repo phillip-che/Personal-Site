@@ -5,6 +5,7 @@ import About from './components/About'
 import Projects from './components/Projects'
 import Home from './components/Home'
 import { useState } from 'react'
+import { Fade } from 'react-awesome-reveal'
 
 function App() {
 
@@ -20,11 +21,13 @@ function App() {
       setOnAboutClick={setOnAboutClick}
       setOnProjectsClick={setOnProjectsClick}
       />
+      <Fade>
         <div className="section-container">
           {onHomeClick && <Home />}
           {onAboutClick && <About />}
           {onProjectsClick && <Projects />}
         </div>
+      </Fade>
     </div>
   )
 }

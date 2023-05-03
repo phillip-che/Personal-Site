@@ -3,9 +3,10 @@ import { Fade } from "react-awesome-reveal";
 
 const Projects = () => {
     return (
-        <Fade cascade>
+        <Fade duration={2000} cascade>
             <div>
-                PROJECTS
+                <h1>/projects</h1>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
             </div>
         </Fade>
     )
