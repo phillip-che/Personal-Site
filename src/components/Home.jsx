@@ -5,7 +5,7 @@ const Home = () => {
         <Fade duration={2000} cascade>
             <div>
                 <h1>/home</h1>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                <p>Lorem ipsum dolor sit amet.</p>
             </div>
         </Fade>
     )

@@ -6,7 +6,8 @@
     position: absolute;
     right: 15%;
     top: 30%;
-    max-width: max-content;
+    /* max-width: max-content; */
+    width: 30%;
     border-radius: 30px;
     box-shadow: 0 0px 0px 0 rgba(11, 64, 240, 0.2), 0 25px 30px 10px rgba(0, 0, 0, 0.3);
     padding: 1em 5em 2em 5em;  

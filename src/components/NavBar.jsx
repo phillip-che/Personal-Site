@@ -3,7 +3,7 @@ import { Fade } from "react-awesome-reveal";
 
 const NavBar = ({setOnHomeClick, setOnAboutClick, setOnProjectsClick}) => {
     return (
-        <Fade>
+        <Fade direction="left">
         <div id="navbar">
             <ul>
                 <li className="navbar-item">
