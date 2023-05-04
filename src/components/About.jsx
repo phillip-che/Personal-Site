@@ -18,7 +18,7 @@ const About = () => {
                         Apart from academics, I also run an online sneaker reselling community and business called <a href="https://www.solacenotify.com/">Solace Notify</a>. If I'm not coding, I'll probably be playing video games with friends, listening to music, or watching Netflix. 
                     </p>
                 </div>
-                {/* <img className="about-image" src={me}></img> */}
+                <img className="about-image" src={me}></img>
                 </div>
             </div>
         </Fade>
