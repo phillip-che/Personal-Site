@@ -13,6 +13,8 @@ function App() {
   const [onAboutClick, setOnAboutClick] = useState(false);
   const [onProjectsClick, setOnProjectsClick] = useState(false);
 
+  const [section, setSection] = useState(0);
+
   return (
     <div className="app">
       <Intro />
@@ -20,12 +22,16 @@ function App() {
       setOnHomeClick={setOnHomeClick}
       setOnAboutClick={setOnAboutClick}
       setOnProjectsClick={setOnProjectsClick}
+      setSection={setSection}
       />
       <Fade>
         <div className="section-container">
-          {onHomeClick && <Home />}
+          {/* {onHomeClick && <Home />}
           {onAboutClick && <About />}
-          {onProjectsClick && <Projects />}
+          {onProjectsClick && <Projects />} */}
+          {section === 0 && <Home />}
+          {section === 1 && <About />}
+          {section === 2 && <Projects />}
         </div>
       </Fade>
     </div>
