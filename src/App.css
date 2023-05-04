@@ -4,10 +4,10 @@
 
 .section-container {
     position: absolute;
-    right: 15%;
+    right: 5%;
     top: 30%;
     /* max-width: max-content; */
-    width: 30%;
+    width: 40%;
     border-radius: 30px;
     box-shadow: 0 0px 0px 0 rgba(11, 64, 240, 0.2), 0 25px 30px 10px rgba(0, 0, 0, 0.3);
     padding: 1em 5em 2em 5em;  
@@ -15,10 +15,27 @@
 }
 
 p {
-    font-size: 25px;
+    font-size: 25px;    
 }
 
 h1 {
     font-size: 40px;
     color: #E94560;
 }
+
+.section-header {
+    display: flex;
+    /* padding-bottom: 42px; */
+    /* width: 100vw; */
+}
+
+.section-header::after {
+    content: "";
+    display: block;
+    width: 200px;
+    margin-top: 55px;
+    height: 1px;
+    margin-left: 20px;
+    background-color: #533483;
+    opacity: 50%;
+}  

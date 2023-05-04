@@ -9,9 +9,9 @@ import { Fade } from 'react-awesome-reveal'
 
 function App() {
 
-  const [onHomeClick, setOnHomeClick] = useState(true);
-  const [onAboutClick, setOnAboutClick] = useState(false);
-  const [onProjectsClick, setOnProjectsClick] = useState(false);
+  // const [onHomeClick, setOnHomeClick] = useState(true);
+  // const [onAboutClick, setOnAboutClick] = useState(false);
+  // const [onProjectsClick, setOnProjectsClick] = useState(false);
 
   const [section, setSection] = useState(0);
 
@@ -19,9 +19,9 @@ function App() {
     <div className="app">
       <Intro />
       <NavBar 
-      setOnHomeClick={setOnHomeClick}
-      setOnAboutClick={setOnAboutClick}
-      setOnProjectsClick={setOnProjectsClick}
+      // setOnHomeClick={setOnHomeClick}
+      // setOnAboutClick={setOnAboutClick}
+      // setOnProjectsClick={setOnProjectsClick}
       setSection={setSection}
       />
       <Fade>
