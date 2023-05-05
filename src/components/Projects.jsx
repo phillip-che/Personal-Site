@@ -13,7 +13,7 @@ const Projects = () => {
     };
     
     return (
-        <div className="projects">
+        <div id="projects">
             <Fade duration={2000}>
                 <div className="section-header">
                     <h1>/projects</h1>
@@ -21,7 +21,7 @@ const Projects = () => {
             </Fade>
             <div className="carousel-container"></div>
             <Fade direction="right">
-                <Carousel activeIndex={index} onSelect={handleSelect}>
+                <Carousel activeIndex={index} onSelect={handleSelect} interval={null}>
                     <Carousel.Item>
                         <img
                         className="d-block w-100"
@@ -29,8 +29,10 @@ const Projects = () => {
                         alt="First slide"
                         />
                         <Carousel.Caption>
-                            <h3>First slide label</h3>
+                            <h3>Just In Time</h3>
                             <p>Nulla vitae elit libero, a pharetra augue mollis interdum.</p>
+                            <p>asdasd</p>
+                            <p>ioqwu</p>
                         </Carousel.Caption>
                     </Carousel.Item>
                     <Carousel.Item>
@@ -40,24 +42,23 @@ const Projects = () => {
                         alt="Second slide"
                         />
                         <Carousel.Caption>
-                        <h3>Second slide label</h3>
+                        <h3>Sole Exchange</h3>
                         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
                         </Carousel.Caption>
                     </Carousel.Item>
-                    {/* <Carousel.Item>
+                    <Carousel.Item>
                         <img
                         className="d-block w-100"
                         src="holder.js/800x400?text=Third slide&bg=20232a"
                         alt="Third slide"
                         />
-
                         <Carousel.Caption>
-                        <h3>Third slide label</h3>
+                        <h3>Spotify Data Dashboard</h3>
                         <p>
                             Praesent commodo cursus magna, vel scelerisque nisl consectetur.
                         </p>
                         </Carousel.Caption>
-                    </Carousel.Item> */}
+                    </Carousel.Item>
                 </Carousel>
             </Fade>
         </div>
