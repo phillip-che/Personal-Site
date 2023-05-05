@@ -3,6 +3,7 @@ import { Fade } from "react-awesome-reveal";
 import MailOutlineRoundedIcon from '@mui/icons-material/MailOutlineRounded';
 import GitHubIcon from '@mui/icons-material/GitHub';
 import LinkedInIcon from '@mui/icons-material/LinkedIn';
+import InstagramIcon from '@mui/icons-material/Instagram';
 
 const NavBar = ({setOnHomeClick, setOnAboutClick, setOnProjectsClick, setSection}) => {
     return (
@@ -49,6 +50,9 @@ const NavBar = ({setOnHomeClick, setOnAboutClick, setOnProjectsClick, setSection
                         </a>
                         <a href="https://www.linkedin.com/in/phillipche" target="_blank">
                             <LinkedInIcon style={{ fontSize: 25 }}></LinkedInIcon>
+                        </a>
+                        <a href="https://www.instagram.com/philllip.che" target="_blank">
+                            <InstagramIcon style={{ fontSize: 25 }}></InstagramIcon>
                         </a>
                     </div>
                 </li>

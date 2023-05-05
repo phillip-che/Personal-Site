@@ -1,5 +1,6 @@
 .app {
-    /* display: flex; */
+    font-family: 'Dosis', sans-serif; 
+    color: #fff;
 }
 
 .section-container {
@@ -33,7 +34,7 @@ h1 {
     content: "";
     display: block;
     width: 200px;
-    margin-top: 55px;
+    margin-top: 30px;
     height: 1px;
     margin-left: 20px;
     background-color: #533483;

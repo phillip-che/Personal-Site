@@ -13,7 +13,7 @@ function App() {
   // const [onAboutClick, setOnAboutClick] = useState(false);
   // const [onProjectsClick, setOnProjectsClick] = useState(false);
 
-  const [section, setSection] = useState(0);
+  const [section, setSection] = useState(1);
 
   return (
     <div className="app">

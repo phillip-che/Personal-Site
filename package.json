@@ -10,13 +10,13 @@
     "preview": "vite preview"
   },
   "dependencies": {
-    "@emotion/react": "^11.10.8",
-    "@emotion/styled": "^11.10.8",
     "@mui/icons-material": "^5.11.16",
-    "@mui/material": "^5.12.3",
+    "bootstrap": "^5.2.3",
     "react": "^18.2.0",
     "react-awesome-reveal": "^4.2.3",
+    "react-bootstrap": "^2.7.4",
     "react-dom": "^18.2.0",
+    "react-responsive-carousel": "^3.2.23",
     "react-router-dom": "^6.10.0",
     "typewriter-effect": "^2.19.0"
   },

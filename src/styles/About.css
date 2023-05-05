@@ -4,10 +4,9 @@
 }
 
 .about-image {
-    max-width: 25%;
+    max-width: 35%;
     height: auto;
     border-radius: 10px;
-    margin-left: 30px;
     box-shadow: 6px 13px 23px -5px rgba(0, 0, 0, 0.46);
     border: none;
 }
@@ -18,8 +17,13 @@
 
 .about-body {
     display: flex;
-    gap: 100px;
-    padding: 1em 2em 2em 2em;
+    gap: 75px;
+    padding: 2em 3em 3em 3em;
     border-radius: 15px;
     box-shadow: 0 0px 0px 0 rgba(11, 64, 240, 0.2), 0 25px 30px 10px rgba(0, 0, 0, 0.3);
+}
+
+.highlight {
+    color: #ffffff9d;
+    font-weight: bold;
 }
