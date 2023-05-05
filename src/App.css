@@ -5,11 +5,11 @@
 .section-container {
     position: absolute;
     right: 5%;
-    top: 30%;
-    /* max-width: max-content; */
-    width: 40%;
+    top: 28%;
+    max-width: 45%;
+    width: 45%;
+    height: auto;
     border-radius: 30px;
-    box-shadow: 0 0px 0px 0 rgba(11, 64, 240, 0.2), 0 25px 30px 10px rgba(0, 0, 0, 0.3);
     padding: 1em 5em 2em 5em;  
     transition: all .2s ease-in-out;
 }

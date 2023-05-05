@@ -1,5 +1,8 @@
 import "../styles/NavBar.css";
 import { Fade } from "react-awesome-reveal";
+import MailOutlineRoundedIcon from '@mui/icons-material/MailOutlineRounded';
+import GitHubIcon from '@mui/icons-material/GitHub';
+import LinkedInIcon from '@mui/icons-material/LinkedIn';
 
 const NavBar = ({setOnHomeClick, setOnAboutClick, setOnProjectsClick, setSection}) => {
     return (
@@ -36,9 +39,19 @@ const NavBar = ({setOnHomeClick, setOnAboutClick, setOnProjectsClick, setSection
                     }}
                     >/projects</a>
                 </li>
-                {/* <li className="navbar-item">
-                    <a href="#" class="effect-underline">/contact</a>
-                </li> */}
+                <li>
+                    <div className="socials">
+                        <a href="mailto:phillipche1@gmail.com" target="_blank">
+                            <MailOutlineRoundedIcon style={{ fontSize: 25 }}></MailOutlineRoundedIcon>
+                        </a>
+                        <a href="https://github.com/phillip-che" target="_blank">
+                            <GitHubIcon style={{ fontSize: 25 }}></GitHubIcon>
+                        </a>
+                        <a href="https://www.linkedin.com/in/phillipche" target="_blank">
+                            <LinkedInIcon style={{ fontSize: 25 }}></LinkedInIcon>
+                        </a>
+                    </div>
+                </li>
             </ul>
         </ div>
         </Fade>

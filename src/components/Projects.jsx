@@ -3,14 +3,16 @@ import { Fade } from "react-awesome-reveal";
 
 const Projects = () => {
     return (
-        <Fade duration={2000} cascade>
             <div>
-            <div className="section-header">
-                <h1>/projects</h1>
-            </div>
+            <Fade duration={2000}>
+                <div className="section-header">
+                    <h1>/projects</h1>
+                </div>
+            </Fade>
+            <Fade direction="right">
                 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+            </Fade>
             </div>
-        </Fade>
     )
 }
 

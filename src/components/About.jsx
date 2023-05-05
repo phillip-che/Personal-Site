@@ -4,11 +4,13 @@ import me from "../assets/seattle.jpg"
 
 const About = () => {
     return (
-        <Fade duration={2000}>
             <div id="about">
+                <Fade duration={2000}>
                 <div className="section-header">
                     <h1>/about</h1>
                 </div>
+                </Fade>
+                <Fade direction="right">
                 <div className="about-body">
                 <div>
                     <p>
@@ -20,8 +22,9 @@ const About = () => {
                 </div>
                 <img className="about-image" src={me}></img>
                 </div>
+                </Fade>
             </div>
-        </Fade>
+        
     )
 }
 
