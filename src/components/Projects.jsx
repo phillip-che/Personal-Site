@@ -2,9 +2,8 @@ import "../styles/Projects.css";
 import { Fade } from "react-awesome-reveal";
 import React, { useState } from 'react';
 import Carousel from "react-bootstrap/Carousel";
-import soleexchange from "../assets/soleexchange.png"
+import soleexchange from "../assets/soleexchange1.png"
 import jit from "../assets/jit.jpg"
-import pic2 from "../assets/peterzhou.png"
 
 const Projects = () => {
     const [index, setIndex] = useState(0);
