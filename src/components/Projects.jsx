@@ -4,6 +4,7 @@ import React, { useState } from 'react';
 import Carousel from "react-bootstrap/Carousel";
 import soleexchange from "../assets/soleexchange1.png"
 import jit from "../assets/jit.jpg"
+import spotifydash from "../assets/spotifydash.png"
 
 const Projects = () => {
     const [index, setIndex] = useState(0);
@@ -31,7 +32,7 @@ const Projects = () => {
                         <Carousel.Caption>
                             <h3>Just In Time</h3>
                             <div className="project-caption">
-                                <p>A platform that enables customers to buy soon-to-expire groceries from participating stores at a discount  .</p>
+                                <p className="project-desc">A platform that enables customers to buy soon-to-expire groceries from participating stores at a discount  .</p>
                                 <p className="tech-stack">JavaScript, React.js, Node.js, Supabase</p>
                             </div>
                         </Carousel.Caption>
@@ -45,7 +46,7 @@ const Projects = () => {
                         <Carousel.Caption>
                         <h3>Sole Exchange</h3>
                         <div className="project-caption">
-                            <p>A forum that allows users to freely express their opinions on anything sneaker related.</p>
+                            <p className="project-desc">A forum that allows users to freely express their opinions on anything sneaker related.</p>
                             <p className="tech-stack">JavaScript, React.js, Node.js, Supabase</p>
                         </div>
                         </Carousel.Caption>
@@ -53,13 +54,13 @@ const Projects = () => {
                     <Carousel.Item>
                         <img
                         className="d-block w-100"
-                        src="holder.js/800x400?text=Third slide&bg=20232a"
+                        src={spotifydash}
                         alt="Third slide"
                         />
                         <Carousel.Caption>
                         <h3>Spotify Data Dashboard</h3>
                         <div className="project-caption">
-                            <p>Praesent commodo cursus magna, vel scelerisque nisl consectetur.</p>
+                            <p className="project-desc">Praesent commodo cursus magna, vel scelerisque nisl consectetur.</p>
                             <p className="tech-stack">JavaScript, React.js, Node.js, Spotify API, Recharts API</p>
                         </div>
                         </Carousel.Caption>
