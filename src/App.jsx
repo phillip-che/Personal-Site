@@ -24,7 +24,7 @@ function App() {
       // setOnProjectsClick={setOnProjectsClick}
       setSection={setSection}
       />
-      <Fade>
+      <Fade triggerOnce>
         <div className="section-container">
           {/* {onHomeClick && <Home />}
           {onAboutClick && <About />}

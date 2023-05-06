@@ -41,3 +41,10 @@
         margin-bottom: 5%;
     }
 }
+
+@media only screen and (max-width: 1000px) {
+    #navbar {
+        width: 40%;
+        left: 8%;
+    }
+}
