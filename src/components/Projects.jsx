@@ -2,7 +2,7 @@ import "../styles/Projects.css";
 import { Fade } from "react-awesome-reveal";
 import React, { useState } from 'react';
 import Carousel from "react-bootstrap/Carousel";
-import pic1 from "../assets/ray.jpg"
+import soleexchange from "../assets/soleexchange.png"
 import pic2 from "../assets/peterzhou.png"
 
 const Projects = () => {
@@ -25,25 +25,29 @@ const Projects = () => {
                     <Carousel.Item>
                         <img
                         className="d-block w-100"
-                        src={pic1}
+                        src={pic2}
                         alt="First slide"
                         />
                         <Carousel.Caption>
                             <h3>Just In Time</h3>
-                            <p>Nulla vitae elit libero, a pharetra augue mollis interdum.</p>
-                            <p>asdasd</p>
-                            <p>ioqwu</p>
+                            <div className="project-caption">
+                                <p>A platform that enables customers to buy soon-to-expire groceries from participating stores at a discount  .</p>
+                                <p className="tech-stack">JavaScript, React.js, Node.js, Supabase</p>
+                            </div>
                         </Carousel.Caption>
                     </Carousel.Item>
                     <Carousel.Item>
                         <img
                         className="d-block w-100"
-                        src={pic2}
+                        src={soleexchange}
                         alt="Second slide"
                         />
                         <Carousel.Caption>
                         <h3>Sole Exchange</h3>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                        <div className="project-caption">
+                            <p>A forum that allows users to freely express their opinions on anything sneaker related.</p>
+                            <p className="tech-stack">JavaScript, React.js, Node.js, Supabase</p>
+                        </div>
                         </Carousel.Caption>
                     </Carousel.Item>
                     <Carousel.Item>
@@ -54,9 +58,10 @@ const Projects = () => {
                         />
                         <Carousel.Caption>
                         <h3>Spotify Data Dashboard</h3>
-                        <p>
-                            Praesent commodo cursus magna, vel scelerisque nisl consectetur.
-                        </p>
+                        <div className="project-caption">
+                            <p>Praesent commodo cursus magna, vel scelerisque nisl consectetur.</p>
+                            <p className="tech-stack">JavaScript, React.js, Node.js, Spotify API, Recharts API</p>
+                        </div>
                         </Carousel.Caption>
                     </Carousel.Item>
                 </Carousel>
