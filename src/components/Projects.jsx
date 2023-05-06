@@ -26,20 +26,6 @@ const Projects = () => {
                     <Carousel.Item>
                         <img
                         className="d-block w-100"
-                        src={jit}
-                        alt="First slide"
-                        />
-                        <Carousel.Caption>
-                            <h3>Just In Time</h3>
-                            <div className="project-caption">
-                                <p className="project-desc">A platform that enables customers to buy soon-to-expire groceries from participating stores at a discount  .</p>
-                                <p className="tech-stack">JavaScript, React.js, Node.js, Supabase</p>
-                            </div>
-                        </Carousel.Caption>
-                    </Carousel.Item>
-                    <Carousel.Item>
-                        <img
-                        className="d-block w-100"
                         src={soleexchange}
                         alt="Second slide"
                         />
@@ -54,13 +40,27 @@ const Projects = () => {
                     <Carousel.Item>
                         <img
                         className="d-block w-100"
+                        src={jit}
+                        alt="First slide"
+                        />
+                        <Carousel.Caption>
+                            <h3>Just In Time</h3>
+                            <div className="project-caption">
+                                <p className="project-desc">A platform that enables customers to buy soon-to-expire groceries from participating stores at a discount  .</p>
+                                <p className="tech-stack">JavaScript, React.js, Node.js, Supabase</p>
+                            </div>
+                        </Carousel.Caption>
+                    </Carousel.Item>
+                    <Carousel.Item>
+                        <img
+                        className="d-block w-100"
                         src={spotifydash}
                         alt="Third slide"
                         />
                         <Carousel.Caption>
                         <h3>Spotify Data Dashboard</h3>
                         <div className="project-caption">
-                            <p className="project-desc">Praesent commodo cursus magna, vel scelerisque nisl consectetur.</p>
+                            <p className="project-desc">Dashboard that fetches Spotify's Top 50 songs and visualizes data in text and chart form.</p>
                             <p className="tech-stack">JavaScript, React.js, Node.js, Spotify API, Recharts API</p>
                         </div>
                         </Carousel.Caption>
