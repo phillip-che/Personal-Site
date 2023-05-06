@@ -19,6 +19,14 @@
     margin-top: 80px;
 }
 
+.social-icon {
+    color: #fff;
+}
+
+.social-icon:hover {
+    color: #E94560;
+}
+
 @media only screen and (max-width: 1920px) {
     #navbar {
         width: 9%;

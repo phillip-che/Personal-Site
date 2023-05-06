@@ -1,7 +1,6 @@
 import "../styles/About.css";
 import { Fade } from "react-awesome-reveal";
 import me from "../assets/seattle.jpg"
-import ray from "../assets/peterzhou.png"
 
 const About = () => {
     return (
