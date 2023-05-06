@@ -34,12 +34,6 @@
     font-weight: bold;
 }
 
-/* @media only screen and (max-width: 1366) {
-    .about-image {
-        width: 200px;
-    }
-} */
-
 @media only screen and (max-width: 1000px) {
     .about-body {
         display: flex;

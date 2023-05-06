@@ -9,7 +9,9 @@ const Home = () => {
                 </div>
             </Fade>
             <Fade direction="right">
-                <p>Lorem ipsum dolor sit amet.</p>
+                <p>you're average boba enjoyer trying to navigate through the struggles of being an aspiring software engineer.</p>
+                {/* display spotify statistics: 5 most recently played tracks, top 5 tracks */}
+                {/* perhaps a photo gallery with with carousel or deck of cards animation */}
             </Fade>
             </div>
     )
