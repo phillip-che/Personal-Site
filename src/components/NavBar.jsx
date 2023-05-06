@@ -42,16 +42,16 @@ const NavBar = ({setOnHomeClick, setOnAboutClick, setOnProjectsClick, setSection
                 </li>
                 <li>
                     <div className="socials">
-                        <a href="mailto:phillipche1@gmail.com" target="_blank">
+                        <a className="social-icon" href="mailto:phillipche1@gmail.com" target="_blank">
                             <MailOutlineRoundedIcon style={{ fontSize: 25 }}></MailOutlineRoundedIcon>
                         </a>
-                        <a href="https://github.com/phillip-che" target="_blank">
+                        <a className="social-icon" href="https://github.com/phillip-che" target="_blank">
                             <GitHubIcon style={{ fontSize: 25 }}></GitHubIcon>
                         </a>
-                        <a href="https://www.linkedin.com/in/phillipche" target="_blank">
+                        <a className="social-icon" href="https://www.linkedin.com/in/phillipche" target="_blank">
                             <LinkedInIcon style={{ fontSize: 25 }}></LinkedInIcon>
                         </a>
-                        <a href="https://www.instagram.com/philllip.che" target="_blank">
+                        <a className="social-icon" href="https://www.instagram.com/philllip.che" target="_blank">
                             <InstagramIcon style={{ fontSize: 25 }}></InstagramIcon>
                         </a>
                     </div>
