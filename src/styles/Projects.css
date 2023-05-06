@@ -22,7 +22,6 @@
 .carousel-caption {
     position: absolute;
     top: 0%;
-    font-size: 14px;
     user-select: none;
 }
 
@@ -39,12 +38,27 @@
 
 .tech-stack {
     color: #E94560;
-    font-size: 14px;
+    font-size: 16px;
     font-weight: bold;
 }
 
 .project-desc {
     font-size: 18px;
+}
+
+@media only screen and (max-width: 1920px) {
+    .carousel-caption {
+        position: absolute;
+        width: 85%;
+        right: unset !important;
+        left: 8% !important;
+        user-select: none;
+    }
+
+    .carousel-caption h3 {
+        margin-bottom: 40%;
+        font-weight: bold;
+    }
 }
 
 @media only screen and (max-width: 1400px) {
@@ -62,19 +76,24 @@
 
     .carousel-caption {
         position: absolute;
-        max-width: 54%;
+        width: 85%;
         right: unset !important;
-        left: 23% !important;
+        left: 8% !important;
         user-select: none;
     }
 
     .carousel-caption h3 {
-        font-size: 30px;
+        margin-bottom: 36%;
+        font-size: 25px;
         font-weight: bold;
     }
     
     .carousel-caption p {
         font-size: 12px;
+    }
+
+    .project-caption p {
+        margin-bottom: 5px !important;
     }
 }
 
