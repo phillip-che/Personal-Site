@@ -11,7 +11,7 @@ const About = () => {
                 </div>
                 </Fade>
                 <Fade direction="right">
-                <div className="about-body">
+                <div className="about-container">
                 <div className="about-text">
                     <p>
                         I am currently a <span className="highlight">Computer Science</span> major at <a href="https://www.cpp.edu/index.shtml" target="_blank">Cal Poly Pomona </a> and a <span className="highlight">Software Development Engineer Intern</span> at <a href="https://www.aboutamazon.com" target="_blank">Amazon</a>. In addition, I am actively searching for software engineering internships for the upcoming fall and spring semesters of 2023 and 2024.

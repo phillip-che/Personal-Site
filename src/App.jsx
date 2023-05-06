@@ -4,6 +4,7 @@ import NavBar from './components/NavBar'
 import About from './components/About'
 import Projects from './components/Projects'
 import Home from './components/Home'
+import Experience from './components/Experience'
 import { useState } from 'react'
 import { Fade } from 'react-awesome-reveal'
 
@@ -31,7 +32,8 @@ function App() {
           {onProjectsClick && <Projects />} */}
           {section === 0 && <Home />}
           {section === 1 && <About />}
-          {section === 2 && <Projects />}
+          {section === 2 && <Experience />}
+          {section === 3 && <Projects />}
         </div>
       </Fade>
     </div>

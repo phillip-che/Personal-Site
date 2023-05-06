@@ -31,12 +31,22 @@ const NavBar = ({setOnHomeClick, setOnAboutClick, setOnProjectsClick, setSection
                     >/about</a>
                 </li>
                 <li className="navbar-item">
+                    <a href="#experience" className="effect-underline"
+                    onClick={() => {
+                        // setOnHomeClick(false)
+                        // setOnAboutClick(true)
+                        // setOnProjectsClick(false)
+                        setSection(2);
+                    }}
+                    >/experience</a>
+                </li>
+                <li className="navbar-item">
                     <a href="#projects" className="effect-underline"
                     onClick={() => {
                         // setOnHomeClick(false)
                         // setOnAboutClick(false)
                         // setOnProjectsClick(true)
-                        setSection(2);
+                        setSection(3);
                     }}
                     >/projects</a>
                 </li>

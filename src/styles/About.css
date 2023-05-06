@@ -15,7 +15,7 @@
     transform: translateY(-7px);
 }
 
-.about-body {
+.about-container {
     display: flex;
     gap: 55px;
     padding: 2em 3em 3em 3em;
@@ -35,7 +35,7 @@
 }
 
 @media only screen and (max-width: 1000px) {
-    .about-body {
+    .about-container {
         display: flex;
         flex-direction: column;
         font-size: 5px;

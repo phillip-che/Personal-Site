@@ -8,6 +8,25 @@ import spotifydash from "../assets/spotifydash.png"
 import GitHubIcon from '@mui/icons-material/GitHub';
 
 const Projects = () => {
+
+    const projectList = {
+        "SoleExchange": {
+            description: "Forum that allows users to freely express their opinions on anything sneaker related.",
+            tech: "JavaScript, React.js, Node.js, Supabase",
+            github: "https://github.com/phillip-che/Sneaker-Forum"
+        },
+        "JustInTime": {
+            description: "Platform that lets users buy soon-to-expire groceries from participating stores at a discount.",
+            tech: "JavaScript, React.js, Node.js, Supabase",
+            github: "https://github.com/phillip-che/Just-In-Time"
+        },
+        "Spotify Data Dashboard": {
+            description: "Dashboard that fetches Spotify's Top 50 songs and visualizes data in text and chart form.",
+            tech: "JavaScript, React.js, Node.js, Spotify API, Recharts API",
+            github: "https://github.com/phillip-che/Data-Dashboard"
+        }
+    }
+
     const [index, setIndex] = useState(0);
 
     const handleSelect = (selectedIndex, e) => {
@@ -50,7 +69,7 @@ const Projects = () => {
                         <Carousel.Caption>
                             <h3>Just In Time</h3>
                             <div className="project-caption">
-                                <p className="project-desc">Platform that lets users buy soon-to-expire groceries from participating stores at a discount  .</p>
+                                <p className="project-desc">Platform that lets users buy soon-to-expire groceries from participating stores at a discount.</p>
                                 <p className="tech-stack">JavaScript, React.js, Node.js, Supabase</p>
                                 <a className="social-icon" href="https://github.com/phillip-che/Just-In-Time" target="_blank">
                                     <GitHubIcon style={{ fontSize: 25 }}></GitHubIcon>
