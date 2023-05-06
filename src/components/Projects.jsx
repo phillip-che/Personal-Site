@@ -3,6 +3,7 @@ import { Fade } from "react-awesome-reveal";
 import React, { useState } from 'react';
 import Carousel from "react-bootstrap/Carousel";
 import soleexchange from "../assets/soleexchange.png"
+import jit from "../assets/jit.jpg"
 import pic2 from "../assets/peterzhou.png"
 
 const Projects = () => {
@@ -25,7 +26,7 @@ const Projects = () => {
                     <Carousel.Item>
                         <img
                         className="d-block w-100"
-                        src={pic2}
+                        src={jit}
                         alt="First slide"
                         />
                         <Carousel.Caption>
