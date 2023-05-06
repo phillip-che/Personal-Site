@@ -1,7 +1,7 @@
 .carousel.slide {
     max-width: 900px;
     padding-bottom: 60px;
-  }
+}
   
 .carousel-inner {
     height: 500px;
@@ -47,4 +47,65 @@
 
 .carousel-indicators .active {
     background-color: var(--green-bright);
+}
+
+@media only screen and (max-width: 1400px) {
+
+    .carousel.slide {
+        max-width: 500px;
+        padding-bottom: 60px;
+    }
+
+    .carousel-inner {
+        height: 300px;
+        border-radius: 24px;
+        box-shadow: 0 4px 8px 0 rgb(0 0 0 / 20%), 0 6px 20px 0 rgb(0 0 0 / 19%);
+    }
+
+    .carousel-caption {
+        position: absolute;
+        max-width: 50%;
+        right: unset !important;
+        user-select: none;
+    }
+
+    .carousel-caption h3 {
+        margin-top: 50%;
+        margin-bottom: 25%;
+        font-size: 30px;
+        font-weight: bold;
+    }
+    
+    .carousel-caption p {
+        font-size: 12px;
+    }
+}
+
+@media only screen and (max-width: 1000px) {      
+    .carousel-inner {
+        height: 50%;
+        border-radius: 24px;
+        box-shadow: 0 4px 8px 0 rgb(0 0 0 / 20%), 0 6px 20px 0 rgb(0 0 0 / 19%);
+    }
+
+    .carousel-caption {
+        position: absolute;
+        top: 0%;
+        max-width: 50%;
+        right: unset !important;
+        left: 25% !important;
+        user-select: none;
+    }
+
+    .carousel-caption h3 {
+        margin-top: 50%;
+        margin-bottom: 25%;
+        font-size: 38px;
+        font-weight: bold;
+    }
+    
+    .carousel-caption p {
+        font-size: 12px;
+    }
+
 }

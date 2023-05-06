@@ -27,7 +27,7 @@
 
 @media only screen and (max-width: 1366px) {
     #navbar {
-        width: 9%;
+        width: 12%;
         margin-top: 25px;
         left: 13%;
     }
@@ -38,5 +38,6 @@
 
     .socials {
         margin-top: 30px;
+        margin-bottom: 5%;
     }
 }
