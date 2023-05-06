@@ -17,13 +17,37 @@
 
 .about-body {
     display: flex;
-    gap: 75px;
+    gap: 55px;
     padding: 2em 3em 3em 3em;
     border-radius: 15px;
     box-shadow: 0 0px 0px 0 rgba(11, 64, 240, 0.2), 0 25px 30px 10px rgba(0, 0, 0, 0.3);
 }
 
+.about-text {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
 .highlight {
     color: #ffffff9d;
     font-weight: bold;
+}
+
+/* @media only screen and (max-width: 1366) {
+    .about-image {
+        width: 200px;
+    }
+} */
+
+@media only screen and (max-width: 1000px) {
+    .about-body {
+        display: flex;
+        flex-direction: column;
+        font-size: 5px;
+    }
+
+    .about-image {
+        max-width: 100%;
+    }
 }

@@ -7,7 +7,7 @@ import InstagramIcon from '@mui/icons-material/Instagram';
 
 const NavBar = ({setOnHomeClick, setOnAboutClick, setOnProjectsClick, setSection}) => {
     return (
-        <Fade direction="left">
+        <Fade triggerOnce direction="left">
         <div id="navbar">
             <ul>
                 <li className="navbar-item">
