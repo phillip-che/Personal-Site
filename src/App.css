@@ -64,9 +64,13 @@ h1 {
 }
 
 @media only screen and (max-width: 1000px) {
+    .app {
+        display: flex;
+        flex-direction: column;
+        margin-left: 20px;
+    }
     .section-container {
-        position: absolute;
-        top: 65%;
+        top: 70%;
         max-width: 100%;
         width: 100%;
         height: auto;
