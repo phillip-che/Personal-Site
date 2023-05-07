@@ -5,7 +5,7 @@ import GitHubIcon from '@mui/icons-material/GitHub';
 import LinkedInIcon from '@mui/icons-material/LinkedIn';
 import InstagramIcon from '@mui/icons-material/Instagram';
 
-const NavBar = ({setOnHomeClick, setOnAboutClick, setOnProjectsClick, setSection}) => {
+const NavBar = ({setSection}) => {
     return (
         <Fade triggerOnce direction="left">
         <div id="navbar">
@@ -13,9 +13,6 @@ const NavBar = ({setOnHomeClick, setOnAboutClick, setOnProjectsClick, setSection
                 <li className="navbar-item">
                     <a href="#home" className="effect-underline"
                     onClick={() => {
-                        // setOnHomeClick(true)
-                        // setOnAboutClick(false)
-                        // setOnProjectsClick(false)
                         setSection(0);
                     }}
                     >/home</a>
@@ -23,9 +20,6 @@ const NavBar = ({setOnHomeClick, setOnAboutClick, setOnProjectsClick, setSection
                 <li className="navbar-item">
                     <a href="#about" className="effect-underline"
                     onClick={() => {
-                        // setOnHomeClick(false)
-                        // setOnAboutClick(true)
-                        // setOnProjectsClick(false)
                         setSection(1);
                     }}
                     >/about</a>
@@ -33,9 +27,6 @@ const NavBar = ({setOnHomeClick, setOnAboutClick, setOnProjectsClick, setSection
                 <li className="navbar-item">
                     <a href="#experience" className="effect-underline"
                     onClick={() => {
-                        // setOnHomeClick(false)
-                        // setOnAboutClick(true)
-                        // setOnProjectsClick(false)
                         setSection(2);
                     }}
                     >/experience</a>
@@ -43,9 +34,6 @@ const NavBar = ({setOnHomeClick, setOnAboutClick, setOnProjectsClick, setSection
                 <li className="navbar-item">
                     <a href="#projects" className="effect-underline"
                     onClick={() => {
-                        // setOnHomeClick(false)
-                        // setOnAboutClick(false)
-                        // setOnProjectsClick(true)
                         setSection(3);
                     }}
                     >/projects</a>

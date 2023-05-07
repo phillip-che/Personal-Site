@@ -11,26 +11,16 @@ import { Fade } from 'react-awesome-reveal'
 
 function App() {
 
-  // const [onHomeClick, setOnHomeClick] = useState(true);
-  // const [onAboutClick, setOnAboutClick] = useState(false);
-  // const [onProjectsClick, setOnProjectsClick] = useState(false);
-
   const [section, setSection] = useState(1);
 
   return (
     <div className="app">
       <Intro />
       <NavBar 
-      // setOnHomeClick={setOnHomeClick}
-      // setOnAboutClick={setOnAboutClick}
-      // setOnProjectsClick={setOnProjectsClick}
       setSection={setSection}
       />
       <Fade triggerOnce>
         <div className="section-container">
-          {/* {onHomeClick && <Home />}
-          {onAboutClick && <About />}
-          {onProjectsClick && <Projects />} */}
           {section === 0 && <Home />}
           {section === 1 && <About />}
           {section === 2 && <Experience />}
