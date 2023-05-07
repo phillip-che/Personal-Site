@@ -10,20 +10,23 @@ import GitHubIcon from '@mui/icons-material/GitHub';
 const Projects = () => {
 
     const projectList = {
-        "SoleExchange": {
+        "Sole Exchange": {
             description: "Forum that allows users to freely express their opinions on anything sneaker related.",
             tech: "JavaScript, React.js, Node.js, Supabase",
-            github: "https://github.com/phillip-che/Sneaker-Forum"
+            github: "https://github.com/phillip-che/Sneaker-Forum",
+            img: soleexchange
         },
-        "JustInTime": {
+        "Just In Time": {
             description: "Platform that lets users buy soon-to-expire groceries from participating stores at a discount.",
             tech: "JavaScript, React.js, Node.js, Supabase",
-            github: "https://github.com/phillip-che/Just-In-Time"
+            github: "https://github.com/phillip-che/Just-In-Time",
+            img: jit
         },
         "Spotify Data Dashboard": {
             description: "Dashboard that fetches Spotify's Top 50 songs and visualizes data in text and chart form.",
             tech: "JavaScript, React.js, Node.js, Spotify API, Recharts API",
-            github: "https://github.com/phillip-che/Data-Dashboard"
+            github: "https://github.com/phillip-che/Data-Dashboard",
+            img: spotifydash
         }
     }
 
@@ -43,57 +46,25 @@ const Projects = () => {
             <div className="carousel-container"></div>
             <Fade direction="right">
                 <Carousel activeIndex={index} onSelect={handleSelect} interval={null}>
-                    <Carousel.Item>
-                        <img
-                        className="d-block w-100"
-                        src={soleexchange}
-                        alt="Second slide"
-                        />
-                        <Carousel.Caption>
-                        <h3>Sole Exchange</h3>
-                        <div className="project-caption">
-                            <p className="project-desc">Forum that allows users to freely express their opinions on anything sneaker related.</p>
-                            <p className="tech-stack">JavaScript, React.js, Node.js, Supabase</p>
-                            <a className="social-icon" href="https://github.com/phillip-che/Sneaker-Forum" target="_blank">
-                                <GitHubIcon style={{ fontSize: 25 }}></GitHubIcon>
-                            </a>
-                        </div>
-                        </Carousel.Caption>
-                    </Carousel.Item>
-                    <Carousel.Item>
-                        <img
-                        className="d-block w-100"
-                        src={jit}
-                        alt="First slide"
-                        />
-                        <Carousel.Caption>
-                            <h3>Just In Time</h3>
-                            <div className="project-caption">
-                                <p className="project-desc">Platform that lets users buy soon-to-expire groceries from participating stores at a discount.</p>
-                                <p className="tech-stack">JavaScript, React.js, Node.js, Supabase</p>
-                                <a className="social-icon" href="https://github.com/phillip-che/Just-In-Time" target="_blank">
-                                    <GitHubIcon style={{ fontSize: 25 }}></GitHubIcon>
-                                </a>
-                            </div>
-                        </Carousel.Caption>
-                    </Carousel.Item>
-                    <Carousel.Item>
-                        <img
-                        className="d-block w-100"
-                        src={spotifydash}
-                        alt="Third slide"
-                        />
-                        <Carousel.Caption>
-                        <h3>Spotify Data Dashboard</h3>
-                        <div className="project-caption">
-                            <p className="project-desc">Dashboard that fetches Spotify's Top 50 songs and visualizes data in text and chart form.</p>
-                            <p className="tech-stack">JavaScript, React.js, Node.js, Spotify API, Recharts API</p>
-                            <a className="social-icon" href="https://github.com/phillip-che/Data-Dashboard" target="_blank">
-                                <GitHubIcon style={{ fontSize: 25 }}></GitHubIcon>
-                            </a>
-                        </div>
-                        </Carousel.Caption>
-                    </Carousel.Item>
+                    {Object.keys(projectList).map((key, i) => (
+                        <Carousel.Item>
+                            <img
+                            className="d-block w-100"
+                            src={projectList[key].img}
+                            alt= {i + " slide"}
+                            />
+                            <Carousel.Caption>
+                                <h3>{key}</h3>
+                                <div className="project-caption">
+                                    <p className="project-desc">{projectList[key].description}</p>
+                                    <p className="tech-stack">{projectList[key].tech}</p>
+                                    <a className="social-icon" href={projectList[key].github} target="_blank">
+                                        <GitHubIcon style={{ fontSize: 25 }}></GitHubIcon>
+                                    </a>
+                                </div>
+                            </Carousel.Caption>
+                        </Carousel.Item>
+                    ))}
                 </Carousel>
             </Fade>
         </div>
