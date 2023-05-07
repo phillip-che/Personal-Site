@@ -12,6 +12,7 @@ const Experience = () => {
             <Fade direction="right">
                 <div className="experience-container">
                     <p>experience list here</p>
+                    <p>list technical skills here</p>
                 </div>
             </Fade>
             </div>

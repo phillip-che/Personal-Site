@@ -106,13 +106,15 @@
 
     .carousel-caption {
         position: absolute;
-        max-width: 50%;
+        max-width: 100%;
         user-select: none;
+        top: 30%;
     }
 
     .carousel-caption h3 {
         font-size: 20px;
         font-weight: bold;
+        margin-bottom: 40%;
     }
     
     .carousel-caption p {
