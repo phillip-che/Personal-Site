@@ -11,6 +11,7 @@
   },
   "dependencies": {
     "@mui/icons-material": "^5.11.16",
+    "@vercel/analytics": "^1.0.1",
     "bootstrap": "^5.2.3",
     "react": "^18.2.0",
     "react-awesome-reveal": "^4.2.3",
