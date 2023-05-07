@@ -11,7 +11,7 @@ const Projects = () => {
 
     const projectList = {
         "Sole Exchange": {
-            description: "Forum that allows users to freely express their opinions on anything sneaker related.",
+            description: "Forum that allows users to post, interact, and search about anything sneaker related.",
             tech: "JavaScript, React.js, Node.js, Supabase",
             github: "https://github.com/phillip-che/Sneaker-Forum",
             img: soleexchange
