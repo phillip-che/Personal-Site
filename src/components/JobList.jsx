@@ -77,7 +77,7 @@ const JobList  = () => {
     }
 
   return (
-        <Fade delay={300}>
+        <Fade triggerOnce delay={300}>
             <Box sx={{ display: 'flex', flexGrow: 1 }}>
                 <div className="joblist-container">
                 <Tabs
@@ -119,6 +119,7 @@ const JobList  = () => {
                                     {jobList[key]["points"]?.map((point, i) => (
                                         <ul className="job-description" key={i}>
                                             <Fade 
+                                            triggerOnce
                                             direction='right' 
                                             delay={`${i*5}`} 
                                             >
@@ -140,6 +141,7 @@ const JobList  = () => {
                                             {job.points.map((point, i) => (
                                                 <ul className="job-description" key={i}>
                                                 <Fade 
+                                                triggerOnce
                                                 direction='right' 
                                                 delay={`${i*5}`} 
                                                 >

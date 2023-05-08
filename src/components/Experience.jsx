@@ -17,7 +17,7 @@ const Experience = () => {
 
     return (
             <div className="experience-container">
-                <Fade duration={2000}>
+                <Fade triggerOnce duration={2000}>
                     <div className="section-header">
                         <h1>/experience</h1>
                     </div>

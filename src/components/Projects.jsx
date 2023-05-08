@@ -38,7 +38,7 @@ const Projects = () => {
     
     return (
         <div id="projects">
-            <Fade duration={2000}>
+            <Fade triggerOnce duration={2000}>
                 <div className="section-header">
                     <h1>/projects</h1>
                 </div>

@@ -3,7 +3,7 @@ import { Fade } from "react-awesome-reveal";
 const Home = () => {
     return (
             <div>
-            <Fade duration={2000}>
+            <Fade triggerOnce duration={2000}>
                 <div className="section-header">
                     <h1>/home</h1>
                 </div>
