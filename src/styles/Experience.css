@@ -35,3 +35,8 @@
     margin-bottom: 30px;
 }
 
+@media only screen and (max-width: 600px) {
+    .joblist-container {
+        flex-direction: column;
+    }
+}
