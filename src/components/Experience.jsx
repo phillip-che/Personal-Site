@@ -23,8 +23,14 @@ const Experience = () => {
                     </div>
                 </Fade>
                 <ul className="tech-stack">
-                    {tech_stack.map((item) => (
-                        <li key={item}>{item}</li>
+                    {tech_stack.map((item, i) => (
+                        <Fade 
+                        triggerOnce
+                        direction='up' 
+                        delay={`${i*5}`} 
+                        >
+                            <li key={item}>{item}</li>
+                        </Fade>
                     ))}
                 </ul>
                 <JobList />
