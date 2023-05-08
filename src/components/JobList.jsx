@@ -3,6 +3,7 @@ import PropTypes from 'prop-types';
 import Tabs from '@mui/material/Tabs';
 import Tab from '@mui/material/Tab';
 import Box from '@mui/material/Box';
+import { Fade } from 'react-awesome-reveal';
 
 function TabPanel(props) {
   const { children, value, index, ...other } = props;
@@ -16,7 +17,7 @@ function TabPanel(props) {
       {...other}
     >
       {value === index && (
-        <Box sx={{ p: 3 }}>
+        <Box sx={{ pl: 3 }}>
           <>{children}</>
         </Box>
       )}
@@ -44,20 +45,33 @@ const JobList  = () => {
         //     points: ["", ""],
         // },
         "Solace Notify": {
-            position: "",
-            dates: "",
-            points: ["", ""],
+            position: "Owner and Chief Technical Officer",
+            dates: "Apr. 2019 – Present",
+            points: [
+                "Founded and managed all aspects of an online premium membership Discord-based reselling community.",
+                "Outlined the end-to-end development of in-house projects from design to delivery including iOS applications, Google Chrome Extensions, and websites",
+                "Integrated the Stripe API on to the dashboard to process ~5,000 customer payments and 2,000+ subscriptions.",
+                "Implemented site inventory monitors using Node.js and Discord API to monitor thousands of items on 100+ retailers and send alerts as soon as a specific item is restocked.",
+                "Recruited and delegated workflow of 20 staff members to streamline completion of daily tasks by 75%."
+            ],
         },
         "Cal Poly Pomona": [
             {
-                position: "",
-                dates: "",
-                points: ["", ""]
+                position: "Computer Science Tutor",
+                dates: "Feb. 2023 – Present",
+                points: [
+                    "Provide personalized, one-on-one tutoring to students in programming, advanced algorithms, and data structures.",
+                    "Evaluate assignments and code providing actionable feedback to promote understanding and improvement.",
+                ],
             },
             {
-                position: "",
-                dates: "",
-                points: ["", ""]
+                position: "Undergraduate Research Assistant",
+                dates: "July 2022 – Nov. 2022",
+                points: [
+                    "Leveraged GPU acceleration with CUDA using NASA supercomputer and OpenCV in C++ to stitch images in real-time captured by drones to form a panorama.",
+                    "Incorporated parallel processing in image stitching algorithm to optimize speed from O(N) to O(logN) time with MPI to bolster efficiency by ~25%.",
+                    "Performed 100+ benchmarks to analyze serial and parallel runtime speeds between CPU and GPU cores.",
+                ],
             }
         ]
     }
@@ -74,42 +88,85 @@ const JobList  = () => {
     ];
 
   return (
-    <div className="joblist-container">
-        <Box sx={{ display: 'flex', flexGrow: 1 }}>
-            <Tabs
-            orientation="vertical"
-            variant="scrollable"
-            value={value}
-            onChange={handleChange}
-            sx={{
-            borderRight: 1,
-            borderColor: 'divider',
-            '& .MuiTab-root': {
-                color: '#ffffff9d',
-                fontFamily: `'Dosis', sans-serif !important`,
-            },
-            '& .Mui-selected': {
-                color: '#E94560 !important',
-                fontWeight: `bold`
-            },
-            '& .MuiTabs-indicator': {
-                backgroundColor: '#E94560',
-            },
-            }}
-            >
-                {Object.keys(jobList).map((key) => (
-                    <Tab label={key} />
-                ))}
-        </Tabs>
-            {/* {Object.keys(jobList).map((key, index) => (
-                <TabPanel value={value} index={index}>
-                    {Object.key(jobList[key]).map((key, index) => (
-                        <div>sdf</div>
+        <Fade delay={300}>
+            <Box sx={{ display: 'flex', flexGrow: 1 }}>
+                <div className="joblist-container">
+                <Tabs
+                orientation="vertical"
+                variant="scrollable"
+                value={value}
+                onChange={handleChange}
+                sx={{
+                borderRight: 1,
+                borderColor: 'divider',
+                '& .MuiTab-root': {
+                    color: '#ffffff9d',
+                    fontFamily: `'Dosis', sans-serif !important`,
+                },
+                '& .Mui-selected': {
+                    color: '#E94560 !important',
+                    fontWeight: `bold`
+                },
+                '& .MuiTabs-indicator': {
+                    backgroundColor: '#E94560',
+                },
+                }}
+                >
+                    {Object.keys(jobList).map((key) => (
+                        <Tab label={key} key={key} />
                     ))}
-                </TabPanel>
-            ))} */}
-        </Box>
-    </div>
+                </Tabs>
+                {Object.keys(jobList).map((key, i) => (
+                    <TabPanel value={value} index={i}>
+                        <span className="job-position">
+                            {jobList[key]["position"]}
+                        </span>
+                        <div className="job-dates">
+                            {jobList[key]["dates"]}
+                        </div>
+                        
+                            {!Array.isArray(jobList[key]) ? (
+                                <div className="job-container">
+                                    {jobList[key]["points"]?.map((point, i) => (
+                                        <ul className="job-description" key={i}>
+                                            <Fade 
+                                            direction='right' 
+                                            delay={`${i*5}`} 
+                                            >
+                                            <li className="point" key={i}>{point}</li>
+                                            </Fade>
+                                        </ul>
+                                    ))}
+                                </div>
+                            ) : (
+                                <div>
+                                    {jobList[key].map((job) => (
+                                        <div className="job-container">
+                                            <span className="job-position">
+                                                {job.position}
+                                            </span>
+                                            <div className="job-dates">
+                                                {job.dates}
+                                            </div>
+                                            {job.points.map((point, i) => (
+                                                <ul className="job-description" key={i}>
+                                                <Fade 
+                                                direction='right' 
+                                                delay={`${i*5}`} 
+                                                >
+                                                <li className="point" key={i}>{point}</li>
+                                                </Fade>
+                                                </ul>
+                                            ))}
+                                        </div>
+                                    ))}
+                                </div>
+                            )}
+                    </TabPanel>
+                ))}
+                </div>
+            </Box>
+        </Fade>
   );
 }
 

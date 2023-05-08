@@ -10,13 +10,11 @@ const Experience = () => {
                     <h1>/experience</h1>
                 </div>
             </Fade>
-            <Fade direction="right">
-                <JobList />
-                <div className="experience-container">
-                    {/* <p>experience list here</p>
-                    <p>list technical skills here</p> */}
-                </div>
-            </Fade>
+            <JobList />
+            <div className="experience-container">
+                {/* <p>experience list here</p>
+                <p>list technical skills here</p> */}
+            </div>
             </div>
     )
 }

@@ -1,4 +1,37 @@
 .joblist-container {
+    display: flex;
     transition: all .2s ease-in-out;
     /* box-shadow: 0 0px 0px 0 rgba(11, 64, 240, 0.2), 0 25px 30px 10px rgba(0, 0, 0, 0.3); */
 }
+
+.joblist-container li::before {
+    position: absolute;
+    left: 0;
+    content: "▹ ";
+    color: #E94560;
+}
+
+
+.job-position {
+    font-size: 25px;
+}
+
+.job-dates {
+    font-size: 20px;
+}
+
+.job-description {
+    margin-top: 3%;
+    padding-left: 0;
+    max-width: 800px;
+    list-style-position: outside;
+}
+
+.job-description li {
+    padding-left: 30px;
+}
+
+.job-container {
+    margin-bottom: 30px;
+}
+
