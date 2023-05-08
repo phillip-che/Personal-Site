@@ -76,17 +76,6 @@ const JobList  = () => {
         ]
     }
 
-    const tech_stack = [
-        "Java",
-        "JavaScript",
-        "Python",
-        "React.js",
-        "Node.js",
-        "HTML/CSS",
-        "MySQL",
-        "Supabase"
-    ];
-
   return (
         <Fade delay={300}>
             <Box sx={{ display: 'flex', flexGrow: 1 }}>

@@ -11,7 +11,7 @@ import { Fade } from 'react-awesome-reveal'
 
 function App() {
 
-  const [section, setSection] = useState(1);
+  const [section, setSection] = useState(0);
 
   return (
     <div className="app">

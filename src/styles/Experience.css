@@ -1,7 +1,6 @@
 .joblist-container {
     display: flex;
     transition: all .2s ease-in-out;
-    /* box-shadow: 0 0px 0px 0 rgba(11, 64, 240, 0.2), 0 25px 30px 10px rgba(0, 0, 0, 0.3); */
 }
 
 .joblist-container li::before {
@@ -10,7 +9,6 @@
     content: "▹ ";
     color: #E94560;
 }
-
 
 .job-position {
     font-size: 25px;
@@ -38,6 +36,32 @@
 
 .job-position {
     font-weight: bold;
+}
+
+.tech-stack {
+    list-style-type: none;
+    display: grid;
+    grid-template-columns: repeat(2, minmax(150px, 10px));
+    margin-bottom: 50px;
+    box-shadow: 0 0px 0px 0 rgba(11, 64, 240, 0.2), 0 25px 30px 10px rgba(0, 0, 0, 0.3);
+    padding: 2rem;
+    border-radius: 15px;
+    width: fit-content;
+    color: white;
+    font-weight: normal;
+}
+
+.tech-stack li {
+    position: relative;
+    padding-left: 20px;
+    font-size: 18px;
+}
+
+.tech-stack li::before {
+    position: absolute;
+    content: "▹ ";
+    color: #E94560;
+    left: 0;
 }
 
 @media only screen and (max-width: 600px) {
