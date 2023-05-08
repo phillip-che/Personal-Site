@@ -68,4 +68,7 @@
     .joblist-container {
         flex-direction: column;
     }
+    .tech-stack {
+        box-shadow: none;
+    }
 }
