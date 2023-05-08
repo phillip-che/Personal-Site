@@ -1,0 +1,18 @@
+.joblist-container {
+    display: flex;
+    flex-grow: 1;
+    font-family: 'Dosis', sans-serif !important;
+}
+
+.joblist-tabs {
+    font-family: 'Dosis', sans-serif !important;
+}
+
+.joblist-tab {
+    font-family: 'Dosis', sans-serif !important;
+}
+
+.joblist-tab-desc {
+    font-family: 'Dosis', sans-serif !important;
+}
+

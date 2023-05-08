@@ -1,4 +1,5 @@
 import "../styles/Experience.css";
+import JobList from "./JobList";
 import { Fade } from "react-awesome-reveal";
 
 const Experience = () => {
@@ -10,9 +11,10 @@ const Experience = () => {
                 </div>
             </Fade>
             <Fade direction="right">
+                <JobList />
                 <div className="experience-container">
-                    <p>experience list here</p>
-                    <p>list technical skills here</p>
+                    {/* <p>experience list here</p>
+                    <p>list technical skills here</p> */}
                 </div>
             </Fade>
             </div>
