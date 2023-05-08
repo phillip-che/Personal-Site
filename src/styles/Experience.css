@@ -41,9 +41,9 @@
 .tech-stack {
     list-style-type: none;
     display: grid;
-    grid-template-columns: repeat(2, minmax(150px, 10px));
+    grid-template-columns: repeat(4, minmax(200px, 10px));
     margin-bottom: 50px;
-    box-shadow: 0 0px 0px 0 rgba(11, 64, 240, 0.2), 0 25px 30px 10px rgba(0, 0, 0, 0.3);
+    /* box-shadow: 0 0px 0px 0 rgba(11, 64, 240, 0.2), 0 25px 30px 10px rgba(0, 0, 0, 0.3); */
     padding: 2rem;
     border-radius: 15px;
     width: fit-content;
@@ -64,8 +64,25 @@
     left: 0;
 }
 
+.skills-container span {
+    font-size: 25px;
+}
+
+.skills-container {
+    display: flex;
+    /* flex-direction: column; */
+    justify-content: center;
+    align-items: center;
+    /* outline: dotted 1px red; */
+    margin: -40px auto;
+}
+
 @media only screen and (max-width: 600px) {
     .joblist-container {
         flex-direction: column;
+    }
+
+    .tech-stack {
+        grid-template-columns: repeat(2, minmax(100px, 10px));
     }
 }
