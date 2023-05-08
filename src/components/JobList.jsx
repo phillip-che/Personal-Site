@@ -46,7 +46,7 @@ const JobList  = () => {
         // },
         "Solace Notify": {
             position: "Owner and Chief Technical Officer",
-            dates: "Apr. 2019 – Present",
+            dates: "Apr 2019 – Present",
             points: [
                 "Founded and managed all aspects of an online premium membership Discord-based reselling community.",
                 "Outlined the end-to-end development of in-house projects from design to delivery including iOS applications, Google Chrome Extensions, and websites",
@@ -58,7 +58,7 @@ const JobList  = () => {
         "Cal Poly Pomona": [
             {
                 position: "Computer Science Tutor",
-                dates: "Feb. 2023 – Present",
+                dates: "Feb 2023 – Present",
                 points: [
                     "Provide personalized, one-on-one tutoring to students in programming, advanced algorithms, and data structures.",
                     "Evaluate assignments and code providing actionable feedback to promote understanding and improvement.",
@@ -66,7 +66,7 @@ const JobList  = () => {
             },
             {
                 position: "Undergraduate Research Assistant",
-                dates: "July 2022 – Nov. 2022",
+                dates: "Jul 2022 – Nov 2022",
                 points: [
                     "Leveraged GPU acceleration with CUDA using NASA supercomputer and OpenCV in C++ to stitch images in real-time captured by drones to form a panorama.",
                     "Incorporated parallel processing in image stitching algorithm to optimize speed from O(N) to O(logN) time with MPI to bolster efficiency by ~25%.",
