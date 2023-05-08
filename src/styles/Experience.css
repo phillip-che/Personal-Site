@@ -1,3 +1,4 @@
 .joblist-container {
-
+    transition: all .2s ease-in-out;
+    /* box-shadow: 0 0px 0px 0 rgba(11, 64, 240, 0.2), 0 25px 30px 10px rgba(0, 0, 0, 0.3); */
 }

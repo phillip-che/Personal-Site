@@ -37,6 +37,42 @@ const JobList  = () => {
     setValue(newValue);
   };
 
+  const jobList = {
+        // "Amazon": {
+        //     position: "",
+        //     dates: "",
+        //     points: ["", ""],
+        // },
+        "Solace Notify": {
+            position: "",
+            dates: "",
+            points: ["", ""],
+        },
+        "Cal Poly Pomona": [
+            {
+                position: "",
+                dates: "",
+                points: ["", ""]
+            },
+            {
+                position: "",
+                dates: "",
+                points: ["", ""]
+            }
+        ]
+    }
+
+    const tech_stack = [
+        "Java",
+        "JavaScript",
+        "Python",
+        "React.js",
+        "Node.js",
+        "HTML/CSS",
+        "MySQL",
+        "Supabase"
+    ];
+
   return (
     <div className="joblist-container">
         <Box sx={{ display: 'flex', flexGrow: 1 }}>
@@ -51,29 +87,27 @@ const JobList  = () => {
             '& .MuiTab-root': {
                 color: '#ffffff9d',
                 fontFamily: `'Dosis', sans-serif !important`,
-                fontWeight: `bold`
             },
             '& .Mui-selected': {
                 color: '#E94560 !important',
+                fontWeight: `bold`
             },
             '& .MuiTabs-indicator': {
                 backgroundColor: '#E94560',
             },
             }}
             >
-                <Tab label="Amazon" />
-                <Tab label="Tab 2" />
-                <Tab label="Tab 3" />
+                {Object.keys(jobList).map((key) => (
+                    <Tab label={key} />
+                ))}
         </Tabs>
-            <TabPanel value={value} index={0}>
-                Content for Tab 1 goes here.
-            </TabPanel>
-            <TabPanel value={value} index={1}>
-                Content for Tab 2 goes here.
-            </TabPanel>
-            <TabPanel value={value} index={2}>
-                Content for Tab 3 goes here.
-            </TabPanel>
+            {/* {Object.keys(jobList).map((key, index) => (
+                <TabPanel value={value} index={index}>
+                    {Object.key(jobList[key]).map((key, index) => (
+                        <div>sdf</div>
+                    ))}
+                </TabPanel>
+            ))} */}
         </Box>
     </div>
   );
