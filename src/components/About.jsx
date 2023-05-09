@@ -26,7 +26,6 @@ const About = () => {
                     </div>
                 </Fade>
             </div>
-        
     )
 }
 

@@ -4,7 +4,7 @@
 }
 
 .about-image {
-    max-width: 35%;
+    max-width: 30%;
     height: auto;
     border-radius: 10px;
     box-shadow: 6px 13px 23px -5px rgba(0, 0, 0, 0.46);
@@ -18,9 +18,9 @@
 .about-container {
     display: flex;
     gap: 55px;
-    padding: 2em 3em 3em 3em;
+    /* padding: 2em 3em 3em 3em; */
     border-radius: 15px;
-    box-shadow: 0 0px 0px 0 rgba(11, 64, 240, 0.2), 0 25px 30px 10px rgba(0, 0, 0, 0.3);
+    /* box-shadow: 0 0px 0px 0 rgba(11, 64, 240, 0.2), 0 25px 30px 10px rgba(0, 0, 0, 0.3); */
 }
 
 .about-text {
