@@ -74,11 +74,11 @@ const Home = () => {
             effect={"cards"}
             grabCursor={true}
             modules={[EffectCards, Pagination]}
-            // pagination={{ 
-            //     clickable: true,
-            //     type: "fraction",
+            pagination={{ 
+                clickable: true,
+                type: "fraction",
                 
-            // }}
+            }}
             className="mySwiper"
             >
                 <SwiperSlide>
