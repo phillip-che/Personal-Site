@@ -22,17 +22,20 @@ const Experience = () => {
                         <h1>/experience</h1>
                     </div>
                 </Fade>
-                <ul className="tech-stack">
-                    {tech_stack.map((item, i) => (
-                        <Fade 
-                        triggerOnce
-                        direction='up' 
-                        delay={`${i*5}`} 
-                        >
-                            <li key={item}>{item}</li>
-                        </Fade>
-                    ))}
-                </ul>
+                <div className="skills-container">
+                    {/* <span>Relevant Technologies</span> */}
+                    <ul className="tech-stack">
+                        {tech_stack.map((item, i) => (
+                            <Fade 
+                            triggerOnce
+                            direction='up' 
+                            delay={`${i*5}`} 
+                            >
+                                <li key={item}>{item}</li>
+                            </Fade>
+                        ))}
+                    </ul>
+                </div>
                 <JobList />
             </div>
     )
