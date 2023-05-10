@@ -1,6 +1,5 @@
 .swiper {
     max-width: 30%;
-    height: auto;
 }
 
 .swiper-slide {
@@ -20,13 +19,24 @@
 }
 
 .card-img {
+    object-fit: cover !important;
     border-radius: 12px !important;
+    height: 450px !important;
 }
 
 .card-desc {
     display: flex;
+    flex-direction: column;
     justify-content: center;
+    align-items: center;
+    margin-top: 10px;
+}
+
+.card desc h4 {
+    font-weight: 200px !important;
+}
+
+.card-desc p {
     font-size: 18px;
     font-weight: normal;
-    margin-top: 10px;
 }

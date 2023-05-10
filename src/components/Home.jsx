@@ -4,6 +4,7 @@ import { useEffect } from "react";
 import axios from "axios";
 const CLIENT_ID = import.meta.env.VITE_APP_CLIENT_ID;
 const CLIENT_SECRET = import.meta.env.VITE_APP_CLIENT_SECRET;
+
 // Import Swiper React components
 import { Swiper, SwiperSlide } from "swiper/react";
 
@@ -15,9 +16,17 @@ import 'swiper/css/pagination';
 // import required modules
 import { EffectCards, Pagination } from "swiper";
 
-import img1 from "../assets/seattle.jpg"
-import img2 from "../assets/jit.jpg"
-import img3 from "../assets/spotifydash.png"
+// image imports
+import img1 from "../assets/nap.jpg"
+import img2 from "../assets/seattleferris.jpg"
+import img3 from "../assets/dogcode.jpg"
+import img4 from "../assets/leetcode.jpg"
+import img5 from "../assets/hawaiihike.jpg"
+import img6 from "../assets/hike.jpg"
+import img7 from "../assets/bike.jpg"
+import img8 from "../assets/snow.jpg"
+import img9 from "../assets/sunset.jpg"
+import img10 from "../assets/art.jpg"
 
 const Home = () => {
 
@@ -82,15 +91,83 @@ const Home = () => {
             >
                 <SwiperSlide>
                     <img className="card-img" src={img1} />
-                    <p className="card-desc">img1</p>
+                    <div className="card-desc">
+                        <h5>Location</h5>
+                        <h6>4/4/22</h6>
+                        <p>asdfasdf</p>
+                    </div>
                 </SwiperSlide>
                 <SwiperSlide>
-                    <img className="card-img" src={img1} />
-                    <p className="card-desc">img2</p>
+                    <img className="card-img" src={img2} />
+                    <div className="card-desc">
+                        <h5>Location</h5>
+                        <h6>4/4/22</h6>
+                        <p>asdfasdf</p>
+                    </div>
                 </SwiperSlide>
                 <SwiperSlide>
-                    <img className="card-img" src={img1} />
-                    <p className="card-desc">img3</p>
+                    <img className="card-img" src={img3} />
+                    <div className="card-desc">
+                        <h5>Location</h5>
+                        <h6>4/4/22</h6>
+                        <p>asdfasdf</p>
+                    </div>
+                </SwiperSlide>
+                <SwiperSlide>
+                    <img className="card-img" src={img4} />
+                    <div className="card-desc">
+                        <h5>Location</h5>
+                        <h6>4/4/22</h6>
+                        <p>asdfasdf</p>
+                    </div>
+                </SwiperSlide>
+                <SwiperSlide>
+                    <img className="card-img" src={img5} />
+                    <div className="card-desc">
+                        <h5>Location</h5>
+                        <h6>4/4/22</h6>
+                        <p>asdfasdf</p>
+                    </div>
+                </SwiperSlide>
+                <SwiperSlide>
+                    <img className="card-img" src={img6} />
+                    <div className="card-desc">
+                        <h5>Location</h5>
+                        <h6>4/4/22</h6>
+                        <p>asdfasdf</p>
+                    </div>
+                </SwiperSlide>
+                <SwiperSlide>
+                    <img className="card-img" src={img7} />
+                    <div className="card-desc">
+                        <h5>Location</h5>
+                        <h6>4/4/22</h6>
+                        <p>asdfasdf</p>
+                    </div>
+                </SwiperSlide>
+                <SwiperSlide>
+                    <img className="card-img" src={img8} />
+                    <div className="card-desc">
+                        <h5>Location</h5>
+                        <h6>4/4/22</h6>
+                        <p>asdfasdf</p>
+                    </div>
+                </SwiperSlide>
+                <SwiperSlide>
+                    <img className="card-img" src={img9} />
+                    <div className="card-desc">
+                        <h5>Location</h5>
+                        <h6>4/4/22</h6>
+                        <p>asdfasdf</p>
+                    </div>
+                </SwiperSlide>
+                <SwiperSlide>
+                    <img className="card-img" src={img10} />
+                    <div className="card-desc">
+                        <h5>Location</h5>
+                        <h6>4/4/22</h6>
+                        <p>asdfasdf</p>
+                    </div>
                 </SwiperSlide>
             </Swiper>
             
