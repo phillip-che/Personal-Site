@@ -69,7 +69,6 @@ const Home = () => {
                 <p>other interests include real estate, personal finance, and reselling</p>
                 {/* what i'm listening to: display spotify 5 most recently played tracks */}
                 {/* perhaps a photo gallery with carousel or deck of cards animation */}
-            
             <Swiper
             effect={"cards"}
             grabCursor={true}

@@ -2,7 +2,7 @@
 
 :root {
   font-family: 'Dosis', sans-serif; 
-  color: #fff;
+  color: #ebf8ff;
 }
 
 body {
@@ -14,7 +14,7 @@ body {
   display: block;
   position: absolute;
   top: 50%;
-  left:50%;
+  left: 50%;
   -webkit-transform: translate(-50%,-50%);
   transition: all .2s ease-in-out;
 }
@@ -42,18 +42,18 @@ a.effect-underline:after {
   transition: opacity 0.35s, transform 0.35s;
   -webkit-transform: scale(0,1);
   transform: scale(0,1);
-  color: #fff;
+  color: #9BA4B5;
 }
 
 a.effect-underline:hover:after {
   opacity: 1;
   -webkit-transform: scale(1);
   transform: scale(1);
-  color: #ffffff9d;
+  color: #9BA4B5;
 }
 
 a:hover {
-  color: #ffffff9d;
+  color: #9BA4B5;
 }
 
 /* effect-shine */

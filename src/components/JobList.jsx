@@ -89,7 +89,7 @@ const JobList  = () => {
                 borderRight: 1,
                 borderColor: 'divider',
                 '& .MuiTab-root': {
-                    color: '#ffffff9d',
+                    color: '#9BA4B5',
                     fontFamily: `'Dosis', sans-serif !important`,
                 },
                 '& .Mui-selected': {
