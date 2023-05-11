@@ -34,8 +34,8 @@
     margin-top: 10px;
 }
 
-.card-caption h4 {
-    font-weight: 200px !important;
+.card-caption h5 {
+    font-weight: bold;
 }
 
 .card-caption p {
@@ -53,6 +53,12 @@
     }
     .card-img {
         height: 250px !important;
+    }
+    .card-caption h5 {
+        font-size: 14px !important;
+    }
+    .card-caption h6 {
+        font-size: 14px !important;
     }
     .card-caption p {
         font-size: 12px;
