@@ -76,7 +76,7 @@ const Home = () => {
             <Fade direction="right">
                 <p>you're average boba enjoyer trying to navigate through the struggles of being an aspiring software engineer.</p>
                 {/* <p>other interests include real estate, personal finance, and reselling</p> */}
-                <p>here are some random moments captured along my journey...</p>
+                <p>here are some random moments captured along my journey . . .</p>
                 {/* what i'm listening to: display spotify 5 most recently played tracks */}
                 {/* perhaps a photo gallery with carousel or deck of cards animation */}
             <Swiper
@@ -95,7 +95,7 @@ const Home = () => {
                     <div className="card-caption">
                         <h5>UCLA</h5>
                         <h6>4/22/23</h6>
-                        <p>power nap after coding for 48 hours at LA Hacks</p>
+                        <p>power nap after coding for 36 hours at LA Hacks</p>
                     </div>
                 </SwiperSlide>
                 <SwiperSlide>

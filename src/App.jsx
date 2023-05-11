@@ -5,6 +5,7 @@ import About from './components/About'
 import Projects from './components/Projects'
 import Home from './components/Home'
 import Experience from './components/Experience'
+import Footer from './components/Footer'
 import { Analytics } from '@vercel/analytics/react'
 import { useState } from 'react'
 import { Fade } from 'react-awesome-reveal'
@@ -27,6 +28,7 @@ function App() {
           {section === 3 && <Projects />}
         </div>
       </Fade>
+      <Footer />
       <Analytics />
     </div>
   )
