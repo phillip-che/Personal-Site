@@ -1,16 +1,18 @@
 .swiper {
-    max-width: 30%;
+    width: 30%;
+    width: 325px;
 }
 
 .swiper-slide {
     display: flex;
     align-items: center;
     justify-content: center;
+    margin-top: 50px;
     border-radius: 13px;
     font-weight: bold;
     color: #ebf8ff;
     background-color: #1A1A2E;
-    box-shadow: 0 0px 0px 0 rgba(11, 64, 240, 0.2), 0 25px 30px 10px rgba(0, 0, 0, 0.3);
+    box-shadow: 0 0px 0px 0 rgba(11, 64, 240, 0.2), 0 25px 30px 10px rgba(0, 0, 0, 0.2);
 }
 
 .swiper-pagination {
