@@ -39,8 +39,9 @@
 }
 
 .card-desc p {
-    font-size: 18px;
+    font-size: 16px;
     font-weight: normal;
+    text-align: center;
 }
 
 @media only screen and (max-width: 1400px) {
@@ -52,5 +53,9 @@
     }
     .card-img {
         height: 250px !important;
+    }
+    .card-desc p {
+        font-size: 12px;
+        font-weight: normal;
     }
 }
