@@ -63,11 +63,12 @@ h1 {
     }
 }
 
-@media only screen and (max-width: 1366px) {
+@media only screen and (max-width: 1400px) {
     .section-container {
         max-width: 60%;
         width: 60%;
         right: 0%;
+        top: 17%;
     }
 
     .section-container p {

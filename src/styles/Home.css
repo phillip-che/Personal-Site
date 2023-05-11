@@ -42,3 +42,15 @@
     font-size: 18px;
     font-weight: normal;
 }
+
+@media only screen and (max-width: 1400px) {
+    .swiper {
+        width: 200px;
+    }
+    .swiper-slide {
+        margin-top: 15px;
+    }
+    .card-img {
+        height: 250px !important;
+    }
+}
