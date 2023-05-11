@@ -26,7 +26,7 @@
     height: 450px !important;
 }
 
-.card-desc {
+.card-caption {
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -34,11 +34,11 @@
     margin-top: 10px;
 }
 
-.card desc h4 {
+.card-caption h4 {
     font-weight: 200px !important;
 }
 
-.card-desc p {
+.card-caption p {
     font-size: 16px;
     font-weight: normal;
     text-align: center;
@@ -54,7 +54,7 @@
     .card-img {
         height: 250px !important;
     }
-    .card-desc p {
+    .card-caption p {
         font-size: 12px;
         font-weight: normal;
     }
