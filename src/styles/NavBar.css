@@ -3,7 +3,7 @@
     left: 14%;
     margin-top: 70px;
     transition: all .2s ease-in-out;
-    width: 7%;
+    width: 9%;
 }
 
 .navbar-item {
@@ -27,15 +27,24 @@
     color: #E94560;
 }
 
+.icon {
+    width: 25px;
+    filter: brightness(0) saturate(100%) invert(95%) sepia(50%) saturate(483%) hue-rotate(173deg) brightness(101%) contrast(101%);
+}
+
+.icon:hover {
+    filter: brightness(0) saturate(100%) invert(43%) sepia(92%) saturate(3473%) hue-rotate(326deg) brightness(96%) contrast(90%);
+}
+
 @media only screen and (max-width: 1920px) {
     #navbar {
         width: 9%;
     }
 }
 
-@media only screen and (max-width: 1366px) {
+@media only screen and (max-width: 1400px) {
     #navbar {
-        width: 12%;
+        width: 15%;
         margin-top: 25px;
         left: 13%;
     }
@@ -52,7 +61,7 @@
 
 @media only screen and (max-width: 1000px) {
     #navbar {
-        width: 40%;
+        width: 55%;
         left: 8%;
     }
 }

@@ -78,7 +78,6 @@ const Home = () => {
                 {/* <p>other interests include real estate, personal finance, and reselling</p> */}
                 <p>here are some random moments captured along my journey . . .</p>
                 {/* what i'm listening to: display spotify 5 most recently played tracks */}
-                {/* perhaps a photo gallery with carousel or deck of cards animation */}
             <Swiper
             effect={"cards"}
             grabCursor={true}
@@ -103,7 +102,7 @@ const Home = () => {
                     <div className="card-caption">
                         <h5>Seattle</h5>
                         <h6>1/4/23</h6>
-                        <p>ferris wheel at night while it was raining</p>
+                        <p>ferris wheel at night in the rain</p>
                     </div>
                 </SwiperSlide>
                 <SwiperSlide>

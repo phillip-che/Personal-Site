@@ -4,6 +4,7 @@ import MailOutlineRoundedIcon from '@mui/icons-material/MailOutlineRounded';
 import GitHubIcon from '@mui/icons-material/GitHub';
 import LinkedInIcon from '@mui/icons-material/LinkedIn';
 import InstagramIcon from '@mui/icons-material/Instagram';
+import SpotifyIcon from '../assets/spotify.png'
 
 const NavBar = ({setSection}) => {
     return (
@@ -51,6 +52,9 @@ const NavBar = ({setSection}) => {
                         </a>
                         <a className="social-icon" href="https://www.instagram.com/philllip.che" target="_blank">
                             <InstagramIcon style={{ fontSize: 25 }}></InstagramIcon>
+                        </a>
+                        <a className="social-icon" href="https://open.spotify.com/user/1254644359?si=042655b3fdc14a04" target="_blank">
+                            <img className="icon" src={SpotifyIcon} />
                         </a>
                     </div>
                 </li>

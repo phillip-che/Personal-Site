@@ -7,6 +7,7 @@
 
 body {
   background-color: #1A1A2E;
+  /* background: radial-gradient(#16213E 0%, #1A1A2E 100%); */
   overflow-x: hidden !important;
 }
 
