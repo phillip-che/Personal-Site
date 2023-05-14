@@ -47,6 +47,14 @@
     color: var(--text-primary);
 }
 
+.project-icon {
+    color: var(--text-primary);
+}
+
+.project-icon:hover {
+    color: var(--text-secondary);
+}
+
 @media only screen and (max-width: 1920px) {
     .carousel-caption {
         position: absolute;

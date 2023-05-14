@@ -20,7 +20,7 @@
 }
 
 .social-icon {
-    color: var(--text-primary);
+    color: var(--text-secondary);
 }
 
 .social-icon:hover {
@@ -29,7 +29,8 @@
 
 .icon {
     width: 25px;
-    filter: brightness(0) saturate(100%) invert(95%) sepia(50%) saturate(483%) hue-rotate(173deg) brightness(101%) contrast(101%);
+    /* filter: brightness(0) saturate(100%) invert(95%) sepia(50%) saturate(483%) hue-rotate(173deg) brightness(101%) contrast(101%); */
+    filter: brightness(0) saturate(100%) invert(84%) sepia(22%) saturate(390%) hue-rotate(165deg) brightness(99%) contrast(95%);
 }
 
 .icon:hover {

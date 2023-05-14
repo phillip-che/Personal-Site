@@ -54,11 +54,11 @@ const Projects = () => {
                             alt= {i + " slide"}
                             />
                             <Carousel.Caption>
-                                <h3>{key}</h3>
+                                <h3 className="project-name">{key}</h3>
                                 <div className="project-caption">
                                     <p className="project-desc">{projectList[key].description}</p>
                                     <p className="tech">{projectList[key].tech}</p>
-                                    <a className="social-icon" href={projectList[key].github} target="_blank">
+                                    <a className="project-icon" href={projectList[key].github} target="_blank">
                                         <GitHubIcon style={{ fontSize: 25 }}></GitHubIcon>
                                     </a>
                                 </div>

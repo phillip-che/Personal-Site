@@ -110,7 +110,7 @@ const Home = () => {
                     <h1>/home</h1>
                 </div>
             </Fade>
-            <Fade direction="right">
+            <Fade direction="right" triggerOnce>
                 <p>you're average boba enjoyer trying to navigate through the struggles of being an aspiring software engineer.</p>
                 {/* <p>other interests include real estate, personal finance, and reselling</p> */}
                 <p>here are some random moments captured along my journey . . .</p>
@@ -207,7 +207,6 @@ const Home = () => {
                     </div>
                 </SwiperSlide>
             </Swiper>
-            
             </Fade>
             </div>
     )
