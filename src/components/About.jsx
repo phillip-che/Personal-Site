@@ -20,6 +20,7 @@ const About = () => {
                                 <p>
                                     Apart from academics, I also run an online sneaker reselling community and business called <a href="https://www.solacenotify.com/" target="_blank">Solace Notify</a>. If I'm not coding, I'll probably be playing video games with friends, listening to music, or watching Netflix. 
                                 </p>
+                                {/* maybe include other interests here: real estate, personal finance, custom mechanical keyboards*/}
                             </Fade>
                         </div>
                         <img className="about-image" src={me}></img>

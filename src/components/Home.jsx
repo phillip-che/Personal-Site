@@ -2,8 +2,10 @@ import "../styles/Home.css";
 import { Fade } from "react-awesome-reveal";
 import { useEffect } from "react";
 import axios from "axios";
+import { Buffer } from 'buffer';
 const CLIENT_ID = import.meta.env.VITE_APP_CLIENT_ID;
 const CLIENT_SECRET = import.meta.env.VITE_APP_CLIENT_SECRET;
+const REFRESH_TOKEN = import.meta.env.VITE_APP_REFRESH_TOKEN;
 
 // Import Swiper React components
 import { Swiper, SwiperSlide } from "swiper/react";
@@ -30,41 +32,59 @@ import img10 from "../assets/art.jpg"
 
 const Home = () => {
 
-    // useEffect(() => {
-    //     const callAPI = async () => {
-    //         // cant use this authorization method to get recently played tracks
-    //         await axios("https://accounts.spotify.com/api/token", {
-    //             headers: {
-    //             "Content-Type": "application/x-www-form-urlencoded",
-    //             Authorization: "Basic " + btoa(CLIENT_ID + ":" + CLIENT_SECRET),
-    //             },
-    //             data: "grant_type=client_credentials",
-    //             scope: "user-read-recently-played user-top-read",
-    //             method: "POST",
-    //         }).then((tokenResponse) => {
-    //             axios("https://api.spotify.com/v1/me/player/recently-played", {
-    //                 method: "GET",
-    //                 headers: {
-    //                     "Content-Type": "application/json",
-    //                     Authorization: "Bearer " + tokenResponse.data.access_token
-    //                 }
-    //             }).then((response) => {
-    //                 console.log(response);
-    //             })
-    //             axios("https://api.spotify.com/v1/me/top/tracks", {
-    //                 method: "GET",
-    //                 headers: {
-    //                     "Content-Type": "application/json",
-    //                     Authorization: "Bearer " + tokenResponse.data.access_token
-    //                 }
-    //             }).then((response) => {
-    //                 console.log(response);
-    //             })
-    //             console.log(tokenResponse);
-    //         })
-    //     }
-    //     callAPI();
-    // })
+    const basic = Buffer.from(`${CLIENT_ID}:${CLIENT_SECRET}`).toString('base64');
+    const NOW_PLAYING_ENDPOINT = `https://api.spotify.com/v1/me/player/currently-playing`
+    const TOP_TRACKS_ENDPOINT = `https://api.spotify.com/v1/me/top/tracks`
+    const TOKEN_ENDPOINT = `https://accounts.spotify.com/api/token`
+    
+    const getAccessToken = async () => {
+
+        const params = new URLSearchParams();
+        params.append("grant_type", "refresh_token");
+        params.append("refresh_token", REFRESH_TOKEN);
+
+        const response = await fetch(TOKEN_ENDPOINT, {
+            method: 'POST',
+            headers: {
+            Authorization: `Basic ${basic}`,
+            'Content-Type': 'application/x-www-form-urlencoded',
+            },
+            body: params.toString()
+        })
+
+        // return result;
+        return response.json()
+    }
+
+    const getNowPlaying = async () => {
+        const { access_token } = await getAccessToken()
+
+        await axios(NOW_PLAYING_ENDPOINT, {
+            method: "GET",
+            headers: {
+                "Content-Type": "application/json",
+                Authorization: "Bearer " + access_token,
+            },
+        }).then((result) => {console.log(result)})
+    }
+      
+    const getTopTracks = async () => {
+        const { access_token } = await getAccessToken()
+
+        await axios(TOP_TRACKS_ENDPOINT, {
+            method: "GET",
+            headers: {
+                "Content-Type": "application/json",
+                Authorization: "Bearer " + access_token,
+            },
+        }).then((result) => {console.log(result)})
+    }
+      
+
+    useEffect(() => {
+        console.log(getTopTracks());
+    })
+
 
     return (
             <div>
