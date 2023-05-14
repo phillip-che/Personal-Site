@@ -58,7 +58,7 @@ const Projects = () => {
                                 <div className="project-caption">
                                     <p className="project-desc">{projectList[key].description}</p>
                                     <p className="tech">{projectList[key].tech}</p>
-                                    <a className="project-icon" href={projectList[key].github} target="_blank">
+                                    <a className="project-icon effect-shine" href={projectList[key].github} target="_blank">
                                         <GitHubIcon style={{ fontSize: 25 }}></GitHubIcon>
                                     </a>
                                 </div>
