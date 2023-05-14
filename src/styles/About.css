@@ -30,7 +30,7 @@
 }
 
 .highlight {
-    color: #9BA4B5;
+    color: var(--text-secondary);
     font-weight: bold;
 }
 

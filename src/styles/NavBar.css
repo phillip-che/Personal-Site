@@ -20,11 +20,11 @@
 }
 
 .social-icon {
-    color: #ebf8ff;
+    color: var(--text-primary);
 }
 
 .social-icon:hover {
-    color: #E94560;
+    color: var(--highlight);
 }
 
 .icon {

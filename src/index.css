@@ -2,11 +2,20 @@
 
 :root {
   font-family: 'Dosis', sans-serif; 
-  color: #ebf8ff;
+  --bg: #1A1A2E;
+  --text-primary: #ebf8ff;
+  --text-secondary: #b6e1f6;
+  --highlight: #E94560;
+  --hover: #9BA4B5;
+  /* --bg: #312f42;
+  --text-primary: #f6d0cb;
+  --text-secondary: #61d5e4;
+  --highlight: #4c3cc3;
+  --hover: #61d5e4; */
 }
 
 body {
-  background-color: #1A1A2E;
+  background-color: var(--bg);
   /* background: radial-gradient(#16213E 0%, #1A1A2E 100%); */
   overflow-x: hidden !important;
 }
@@ -21,7 +30,7 @@ body {
 }
 
 a {
-  color: #E94560;
+  color: var(--highlight);
   font-weight: 1000;
   text-decoration: none;
   display: inline-block;
@@ -43,18 +52,18 @@ a.effect-underline:after {
   transition: opacity 0.35s, transform 0.35s;
   -webkit-transform: scale(0,1);
   transform: scale(0,1);
-  color: #9BA4B5;
+  color: var(--hover);
 }
 
 a.effect-underline:hover:after {
   opacity: 1;
   -webkit-transform: scale(1);
   transform: scale(1);
-  color: #9BA4B5;
+  color: var(--hover);
 }
 
 a:hover {
-  color: #9BA4B5;
+  color: var(--hover);
 }
 
 /* effect-shine */

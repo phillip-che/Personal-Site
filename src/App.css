@@ -1,6 +1,6 @@
 .app {
     font-family: 'Dosis', sans-serif; 
-    color: #ebf8ff;
+    color: var(--text-primary);
 }
 
 .section-container {
@@ -27,7 +27,7 @@
     margin-top: 30px;
     height: 1px;
     margin-left: 20px;
-    background-color: #394867;
+    background-color: var(--text-secondary);
     opacity: 75%;
 }  
 
@@ -37,7 +37,7 @@ p {
 
 h1 {
     font-size: 40px;
-    color: #E94560;
+    color: var(--highlight);
 }
 
 @media only screen and (max-width: 1920px) {

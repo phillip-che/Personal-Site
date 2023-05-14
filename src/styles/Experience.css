@@ -1,5 +1,5 @@
 .experience-container {
-    color: #ebf8ff !important;
+    color: var(--text-primary) !important;
 }
 
 .joblist-container {
@@ -11,16 +11,18 @@
     position: absolute;
     left: 0;
     content: "▹ ";
-    color: #E94560;
+    color: var(--highlight);
 }
 
 .job-position {
     font-size: 25px;
+    font-weight: bold;
+    color: var(--text-primary)
 }
 
 .job-dates {
     font-size: 20px;
-    color: #9BA4B5;
+    color: var(--hover);
 }
 
 .job-description {
@@ -36,10 +38,6 @@
 
 .job-container {
     margin-bottom: 30px;
-}
-
-.job-position {
-    font-weight: bold;
 }
 
 .tech-stack {
@@ -62,7 +60,7 @@
 .tech-stack li::before {
     position: absolute;
     content: "▹ ";
-    color: #E94560;
+    color: var(--highlight);
     left: 0;
 }
 

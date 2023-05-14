@@ -7,14 +7,14 @@
 }
 
 .roles {
-    color: #E94560;
+    color: var(--highlight);
 }
 
 .description {
     display: flex;
     flex-direction: column;
     font-size: 50px;
-    color: #9BA4B5;
+    color: var(--text-secondary);
     transition: all .2s ease-in-out;
 }
 
@@ -23,11 +23,11 @@
     margin-top: 5px;
     transition: all .2s ease-in-out;
     font-size: 30px;
-    color: #ebf8ff;
+    color: var(--text-primary);
 }
 
 .name {
-    color: #E94560;
+    color: var(--highlight);
     font-weight: bold;
 }
 

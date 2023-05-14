@@ -10,14 +10,14 @@
     margin-top: 50px;
     border-radius: 13px;
     font-weight: bold;
-    color: #ebf8ff;
-    background-color: #1A1A2E;
+    color: var(--text-primary);
+    background-color: var(--bg);
     box-shadow: 0 0px 0px 0 rgba(11, 64, 240, 0.2), 0 25px 30px 10px rgba(0, 0, 0, 0.2);
 }
 
 .swiper-pagination {
     bottom: -50px !important;
-    color: #9BA4B5 !important;
+    color: var(--text-secondary) !important;
 }
 
 .card-img {
