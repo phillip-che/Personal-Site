@@ -1,6 +1,6 @@
 import "../styles/Home.css";
 import { Fade } from "react-awesome-reveal";
-import { useEffect } from "react";
+import { useEffect, useState } from "react";
 import axios from "axios";
 import { Buffer } from 'buffer';
 const CLIENT_ID = import.meta.env.VITE_APP_CLIENT_ID;
@@ -32,10 +32,14 @@ import img10 from "../assets/art.jpg"
 
 const Home = () => {
 
+    const [nowPlaying, setNowPlaying] = useState(null);
+    const [topTracks, setATopTracks] = useState(null);
+    const [recentlyPlayed, setRecentlyPlayed] = useState(null);
+
     const basic = Buffer.from(`${CLIENT_ID}:${CLIENT_SECRET}`).toString('base64');
-    const NOW_PLAYING_ENDPOINT = `https://api.spotify.com/v1/me/player/currently-playing`
-    const TOP_TRACKS_ENDPOINT = `https://api.spotify.com/v1/me/top/tracks`
-    const TOKEN_ENDPOINT = `https://accounts.spotify.com/api/token`
+    const NOW_PLAYING_ENDPOINT = `https://api.spotify.com/v1/me/player/currently-playing`;
+    const TOP_TRACKS_ENDPOINT = `https://api.spotify.com/v1/me/top/tracks`;
+    const TOKEN_ENDPOINT = `https://accounts.spotify.com/api/token`;
     
     const getAccessToken = async () => {
 
@@ -65,7 +69,10 @@ const Home = () => {
                 "Content-Type": "application/json",
                 Authorization: "Bearer " + access_token,
             },
-        }).then((result) => {console.log(result)})
+        }).then((response) => {
+            setNowPlaying(response.data.item)
+            console.log(response.data.item)
+        })
     }
       
     const getTopTracks = async () => {
@@ -77,13 +84,21 @@ const Home = () => {
                 "Content-Type": "application/json",
                 Authorization: "Bearer " + access_token,
             },
-        }).then((result) => {console.log(result)})
+        }).then((response) => {
+            const tracks = response.data.items.slice(0, 10).map((track) => ({
+                songID: track.id,
+                artist: track.artists.map((_artist) => _artist.name).join(', '),
+                songUrl: track.external_urls.spotify,
+                title: track.name,
+            }));
+            console.log(tracks)
+        })
     }
       
 
     useEffect(() => {
-        console.log(getTopTracks());
-        console.log(getNowPlaying());
+        getTopTracks();
+        getNowPlaying();
     }, [])
 
 
