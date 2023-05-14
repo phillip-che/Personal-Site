@@ -17,7 +17,7 @@
 
 .swiper-pagination {
     bottom: -50px !important;
-    color: var(--text-secondary) !important;
+    color: var(--hover) !important;
 }
 
 .card-img {
@@ -36,6 +36,10 @@
 
 .card-caption h5 {
     font-weight: bold;
+}
+
+.card-caption h6 {
+    color: var(--hover);
 }
 
 .card-caption p {
