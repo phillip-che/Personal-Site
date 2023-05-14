@@ -83,7 +83,8 @@ const Home = () => {
 
     useEffect(() => {
         console.log(getTopTracks());
-    })
+        console.log(getNowPlaying());
+    }, [])
 
 
     return (
