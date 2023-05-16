@@ -3,9 +3,11 @@
 :root {
   font-family: 'Dosis', sans-serif; 
   --bg: #1A1A2E;
+  /* --bg: #0e0a18; */
   --text-primary: #ebf8ff;
   --text-secondary: #b6e1f6;
   --highlight: #E94560;
+  /* --highlight: #a43acb; */
   --hover: #9BA4B5;
   /* --bg: #312f42;
   --text-primary: #f6d0cb;
