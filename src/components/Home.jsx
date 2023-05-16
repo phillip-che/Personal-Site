@@ -89,8 +89,7 @@ const Home = () => {
                 </Fade>
                 <Fade direction="right" triggerOnce>
                     <p>you're average boba enjoyer trying to navigate through the struggles of being an aspiring software engineer.</p>
-                    {/* <p>other interests include real estate, personal finance, and reselling</p> */}
-                    <p>here are some random moments captured along my journey . . .</p>
+                    <p>other interests include real estate, personal finance, and reselling</p>
                     {/* what i'm listening to: display spotify 5 most recently played tracks */}
                 
                     {/* {nowPlaying ? (
