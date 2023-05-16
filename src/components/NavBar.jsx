@@ -39,6 +39,13 @@ const NavBar = ({setSection}) => {
                     }}
                     >/projects</a>
                 </li>
+                <li className="navbar-item">
+                    <a href="#gallery" className="effect-underline"
+                    onClick={() => {
+                        setSection(4);
+                    }}
+                    >/gallery</a>
+                </li>
                 <li>
                     <div className="socials">
                         <a className="social-icon effect-shine" href="mailto:phillipche1@gmail.com" target="_blank">

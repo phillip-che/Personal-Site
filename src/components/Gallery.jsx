@@ -1,6 +1,11 @@
+import "../styles/Gallery.css";
+import GalleryCards from "./GalleryCards";
+
 const Gallery = () => {
   return (
-    <div>Gallery</div>
+    <div>
+        <GalleryCards />
+    </div>
   )
 }
 
