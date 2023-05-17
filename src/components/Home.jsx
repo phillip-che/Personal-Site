@@ -91,15 +91,14 @@ const Home = () => {
                     <p>you're average boba enjoyer trying to navigate through the struggles of being an aspiring software engineer.</p>
                     <p>other interests include real estate, personal finance, and reselling</p>
                     {/* what i'm listening to: display spotify 5 most recently played tracks */}
-                
-                    {/* {nowPlaying ? (
+
+                    {nowPlaying ? (
                         <div>
-                            Currently Playing . . .
+                            Currently listening to . . .
                             <SpotifyDisplay nowPlaying={nowPlaying} />
                         </div>
-                    ) : null} */}
+                    ) : null}
                 
-                    
                 </Fade>
             </div>
     )
