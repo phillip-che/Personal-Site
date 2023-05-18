@@ -1,11 +1,19 @@
 #spotify {
     display: flex;
-    flex-direction: column;
+    /* flex-direction: column; */
+    /* background-color: aliceblue; */
+    justify-content: space-between;
 }
 
 .now-playing-track {
     /* width: 25%; */
     /* height: auto; */
+}
+
+.spotify-other-container {
+    display: flex;
+    /* justify-content: space-between; */
+    /* background-color: aliceblue; */
 }
 
 .recently-played-container {
@@ -19,5 +27,6 @@
 }
 
 .track {
-    width: 50%;
+    width: 100;
+    margin-bottom: 15px;
 }

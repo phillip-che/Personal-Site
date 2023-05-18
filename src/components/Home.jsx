@@ -77,6 +77,7 @@ const Home = () => {
         })
     }
 
+    // get recently played tracks
     const getRecentlyPlayed = async () => {
         const { access_token } = await getAccessToken()
 
