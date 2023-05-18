@@ -66,7 +66,7 @@ const Home = () => {
                 Authorization: "Bearer " + access_token,
             },
         }).then((response) => {
-            const tracks = response.data.items.slice(0, 10).map((track) => ({
+            const tracks = response.data.items.slice(0, 5).map((track) => ({
                 songID: track.id,
                 artist: track.artists.map((_artist) => _artist.name).join(', '),
                 songUrl: track.external_urls.spotify,
@@ -87,7 +87,7 @@ const Home = () => {
                 Authorization: "Bearer " + access_token,
             },
         }).then((response) => {
-            const tracks = response.data.items.slice(0, 10).map((track) => ({
+            const tracks = response.data.items.slice(0, 5).map((track) => ({
                 songID: track.track.id,
                 artist: track.track.artists.map((_artist) => _artist.name).join(', '),
                 songUrl: track.track.external_urls.spotify,
@@ -119,8 +119,11 @@ const Home = () => {
 
                     {nowPlaying ? (
                         <div>
-                            Currently listening to . . .
-                            <SpotifyDisplay nowPlaying={nowPlaying} />
+                            <SpotifyDisplay 
+                            nowPlaying={nowPlaying}
+                            recentlyPlayed={recentlyPlayed}
+                            topTracks={topTracks}
+                             />
                         </div>
                     ) : (
                         <div>
