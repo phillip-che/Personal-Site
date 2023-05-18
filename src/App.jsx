@@ -17,10 +17,12 @@ function App() {
 
   return (
     <div className="app">
-      <Intro />
-      <NavBar 
-      setSection={setSection}
-      />
+      <div className="left-container">
+        <Intro />
+        <NavBar 
+        setSection={setSection}
+        />
+      </div>
       <Fade triggerOnce>
         <div className="section-container">
           {section === 0 && <Home />}
@@ -38,13 +40,6 @@ function App() {
 
 export default App
 
-// What Should Be On a Web Developer Portfolio?
-// Include at least these in your web developer portfolio:
-// – Contact information, including relevant social media accounts
-// – Short bio and your photo
-// – Relevant experience and skills with context
-// – Personal projects
-// – Documented source code
-// – Education
-// – Awards/recognition
-// – Downloadable web developer resume
+// popular resolutions: 
+// 1920 x 1080
+// 1366 × 768

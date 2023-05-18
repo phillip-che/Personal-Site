@@ -3,12 +3,16 @@ import { Fade } from "react-awesome-reveal";
 import { useEffect, useState } from "react";
 import axios from "axios";
 import { Buffer } from 'buffer';
+import { useMediaQuery } from 'react-responsive'
 import SpotifyDisplay from "./SpotifyDisplay";
+
 const CLIENT_ID = import.meta.env.VITE_APP_CLIENT_ID;
 const CLIENT_SECRET = import.meta.env.VITE_APP_CLIENT_SECRET;
 const REFRESH_TOKEN = import.meta.env.VITE_APP_REFRESH_TOKEN;
 
 const Home = () => {
+
+    const laptopScreen = useMediaQuery({ query: '(max-width: 1400px)' });
 
     const [nowPlaying, setNowPlaying] = useState(null);
     const [topTracks, setTopTracks] = useState(null);
@@ -66,7 +70,11 @@ const Home = () => {
                 Authorization: "Bearer " + access_token,
             },
         }).then((response) => {
-            const tracks = response.data.items.slice(0, 5).map((track) => ({
+            let num = 5;
+            if(laptopScreen) {
+                num = 3;
+            }
+            const tracks = response.data.items.slice(0, num).map((track) => ({
                 songID: track.id,
                 artist: track.artists.map((_artist) => _artist.name).join(', '),
                 songUrl: track.external_urls.spotify,
@@ -88,7 +96,11 @@ const Home = () => {
                 Authorization: "Bearer " + access_token,
             },
         }).then((response) => {
-            const tracks = response.data.items.slice(0, 5).map((track) => ({
+            let num = 5;
+            if(laptopScreen) {
+                num = 3;
+            }
+            const tracks = response.data.items.slice(0, num).map((track) => ({
                 songID: track.track.id,
                 artist: track.track.artists.map((_artist) => _artist.name).join(', '),
                 songUrl: track.track.external_urls.spotify,
@@ -127,7 +139,7 @@ const Home = () => {
                         </div>
                     ) : (
                         <div>
-                            <p>Currently Away</p>
+                            {/* <p>Currently Away</p> */}
                         </div>
                     )}
             </div>

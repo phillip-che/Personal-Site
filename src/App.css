@@ -42,8 +42,9 @@ h1 {
 
 @media only screen and (max-width: 1920px) {
     .section-container {
-        max-width: 55%;
-        width: 55%;    
+        max-width: 58%;
+        width: 58%;  
+        right: 2%; 
     }
 
     .section-container p {
@@ -53,8 +54,8 @@ h1 {
 
 @media only screen and (max-width: 1700px) {
     .section-container {
-        max-width: 60%;
-        width: 60%;
+        max-width: 64%;
+        width: 64%;
         right: 0%;  
     }
 
@@ -65,10 +66,10 @@ h1 {
 
 @media only screen and (max-width: 1400px) {
     .section-container {
-        max-width: 60%;
-        width: 60%;
+        max-width: 65%;
+        width: 65%;
         right: 0%;
-        top: 17%;
+        top: 15%;
     }
 
     .section-container p {

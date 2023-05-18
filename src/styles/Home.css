@@ -27,7 +27,6 @@
 }
 
 .track {
-    width: 100;
     margin-bottom: 15px;
 }
 
@@ -87,5 +86,17 @@
     }
     100% {
         transform: scale(0);
+    }
+}
+
+@media only screen and (max-width: 1400px) {
+
+    #spotify {
+        gap: 15px;
+    }
+
+    .now-playing-track {
+        width: 100%;
+        height: 240px;
     }
 }
