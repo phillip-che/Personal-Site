@@ -32,11 +32,12 @@ const SpotifyDisplay = ({nowPlaying, recentlyPlayed, topTracks}) => {
                     </Fade>
                 </div>
             ) : (
-                <div>
-                    <Fade duration={1000} delay={1000} triggerOnce>
-                        <p>Not Playing Anything</p>
-                    </Fade>
-                </div>
+                // <div>
+                //     <Fade duration={1000} delay={1000} triggerOnce>
+                //         <p>Not Playing Anything</p>
+                //     </Fade>
+                // </div>
+                null
             )}
             
 
