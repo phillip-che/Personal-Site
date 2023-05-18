@@ -1,5 +1,23 @@
-.now-playing-track {
-    /* width: 100px;
-    height: auto; */
+#spotify {
+    display: flex;
+    flex-direction: column;
 }
 
+.now-playing-track {
+    /* width: 25%; */
+    /* height: auto; */
+}
+
+.recently-played-container {
+    display: flex;
+    flex-direction: column;
+}
+
+.top-tracks-container {
+    display: flex;
+    flex-direction: column;
+}
+
+.track {
+    width: 50%;
+}
