@@ -5,8 +5,22 @@ const SpotifyDisplay = ({nowPlaying, recentlyPlayed, topTracks}) => {
         <div id="spotify">
 
             <div className="now-playing-container">
-                <p>Currently Playing</p>
-                <Fade direction="up" duration={1000} delay={1000}>
+                <div className="now-playing-header">
+                    <p>Currently Playing</p>
+                    <div class="center">
+                        <div class="wave"></div>
+                        <div class="wave"></div>
+                        <div class="wave"></div>
+                        <div class="wave"></div>
+                        <div class="wave"></div>
+                        <div class="wave"></div>
+                        <div class="wave"></div>
+                        <div class="wave"></div>
+                        <div class="wave"></div>
+                        <div class="wave"></div>
+                    </div>
+                </div>
+                <Fade direction="up" duration={1000} delay={1000} triggerOnce>
                     <Spotify 
                     className="now-playing-track"
                     // wide 
@@ -20,7 +34,7 @@ const SpotifyDisplay = ({nowPlaying, recentlyPlayed, topTracks}) => {
                 <div className="recently-played-container">
                     <p>Recently Played</p>
                     {recentlyPlayed && recentlyPlayed.map((track, i) => (
-                        <Fade direction="up" duration={1000} delay={1000 + (i*100)}>
+                        <Fade direction="up" duration={1000} delay={1000 + (i*100)} triggerOnce>
                         <Spotify 
                             className="track" 
                             wide 
@@ -33,8 +47,8 @@ const SpotifyDisplay = ({nowPlaying, recentlyPlayed, topTracks}) => {
                 <div className="top-tracks-container">
                     <p>Top Tracks This Month</p>
                     {topTracks && topTracks.map((track, i) => (
-                        <Fade direction="up" duration={1000} delay={1000 + (i*100)}>
-                        <Spotify 
+                        <Fade direction="up" duration={1000} delay={1000 + (i*100)} triggerOnce>
+                            <Spotify 
                             className="track" 
                             wide 
                             link={`https://open.spotify.com/track/${track.songID}`} 

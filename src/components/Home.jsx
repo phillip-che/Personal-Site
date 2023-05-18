@@ -128,7 +128,7 @@ const Home = () => {
                         </div>
                     ) : (
                         <div>
-                            
+                            <p>Currently Away</p>
                         </div>
                     )}
                 
