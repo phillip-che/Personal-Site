@@ -113,7 +113,6 @@ const Home = () => {
                         <h1>/home</h1>
                     </div>
                 </Fade>
-                <Fade direction="right" triggerOnce>
                     <p>you're average boba enjoyer trying to navigate through the struggles of being an aspiring software engineer.</p>
                     <p>other interests include real estate, personal finance, and reselling</p>
                     {/* what i'm listening to: display spotify 5 most recently played tracks */}
@@ -131,8 +130,6 @@ const Home = () => {
                             <p>Currently Away</p>
                         </div>
                     )}
-                
-                </Fade>
             </div>
     )
 }

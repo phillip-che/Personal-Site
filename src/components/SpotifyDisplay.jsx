@@ -3,23 +3,25 @@ import { Fade } from "react-awesome-reveal"
 const SpotifyDisplay = ({nowPlaying, recentlyPlayed, topTracks}) => {            
     return (
         <div id="spotify">
-
+            
             <div className="now-playing-container">
-                <div className="now-playing-header">
-                    <p>Currently Playing</p>
-                    <div class="center">
-                        <div class="wave"></div>
-                        <div class="wave"></div>
-                        <div class="wave"></div>
-                        <div class="wave"></div>
-                        <div class="wave"></div>
-                        <div class="wave"></div>
-                        <div class="wave"></div>
-                        <div class="wave"></div>
-                        <div class="wave"></div>
-                        <div class="wave"></div>
+                <Fade duration={1000} delay={1000} triggerOnce>
+                    <div className="now-playing-header">
+                        <p>Currently Playing</p>
+                        <div class="center">
+                            <div class="wave"></div>
+                            <div class="wave"></div>
+                            <div class="wave"></div>
+                            <div class="wave"></div>
+                            <div class="wave"></div>
+                            <div class="wave"></div>
+                            <div class="wave"></div>
+                            <div class="wave"></div>
+                            <div class="wave"></div>
+                            <div class="wave"></div>
+                        </div>
                     </div>
-                </div>
+                </Fade>
                 <Fade direction="up" duration={1000} delay={1000} triggerOnce>
                     <Spotify 
                     className="now-playing-track"
@@ -32,7 +34,9 @@ const SpotifyDisplay = ({nowPlaying, recentlyPlayed, topTracks}) => {
             {/* <div className="spotify-other-container"> */}
 
                 <div className="recently-played-container">
-                    <p>Recently Played</p>
+                    <Fade duration={1000} delay={1000} triggerOnce>
+                        <p>Recently Played</p>
+                    </Fade>
                     {recentlyPlayed && recentlyPlayed.map((track, i) => (
                         <Fade direction="up" duration={1000} delay={1000 + (i*100)} triggerOnce>
                         <Spotify 
@@ -45,7 +49,9 @@ const SpotifyDisplay = ({nowPlaying, recentlyPlayed, topTracks}) => {
                 </div>
 
                 <div className="top-tracks-container">
-                    <p>Top Tracks This Month</p>
+                    <Fade duration={1000} delay={1000} triggerOnce>
+                        <p>Top Tracks This Month</p>
+                    </Fade>
                     {topTracks && topTracks.map((track, i) => (
                         <Fade direction="up" duration={1000} delay={1000 + (i*100)} triggerOnce>
                             <Spotify 
