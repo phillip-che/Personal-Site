@@ -11,12 +11,13 @@ const REFRESH_TOKEN = import.meta.env.VITE_APP_REFRESH_TOKEN;
 const Home = () => {
 
     const [nowPlaying, setNowPlaying] = useState(null);
-    const [topTracks, setATopTracks] = useState(null);
+    const [topTracks, setTopTracks] = useState(null);
     const [recentlyPlayed, setRecentlyPlayed] = useState(null);
 
     const basic = Buffer.from(`${CLIENT_ID}:${CLIENT_SECRET}`).toString('base64');
     const NOW_PLAYING_ENDPOINT = `https://api.spotify.com/v1/me/player/currently-playing`;
     const TOP_TRACKS_ENDPOINT = `https://api.spotify.com/v1/me/top/tracks?time_range=short_term`;
+    const RECENTLY_PLAYED_ENDPOINT = `https://api.spotify.com/v1/me/player/recently-played?limit=10`;
     const TOKEN_ENDPOINT = `https://accounts.spotify.com/api/token`;
     
     const getAccessToken = async () => {
@@ -38,6 +39,7 @@ const Home = () => {
         return response.json()
     }
 
+    // gets now playing song
     const getNowPlaying = async () => {
         const { access_token } = await getAccessToken()
 
@@ -70,13 +72,36 @@ const Home = () => {
                 songUrl: track.external_urls.spotify,
                 title: track.name,
             }));
+            setTopTracks(tracks);
             console.log(tracks)
+        })
+    }
+
+    const getRecentlyPlayed = async () => {
+        const { access_token } = await getAccessToken()
+
+        await axios(RECENTLY_PLAYED_ENDPOINT, {
+            method: "GET",
+            headers: {
+                "Content-Type": "application/json",
+                Authorization: "Bearer " + access_token,
+            },
+        }).then((response) => {
+            const tracks = response.data.items.slice(0, 10).map((track) => ({
+                songID: track.track.id,
+                artist: track.track.artists.map((_artist) => _artist.name).join(', '),
+                songUrl: track.track.external_urls.spotify,
+                title: track.track.name,
+            }));
+            console.log(tracks);
+            setRecentlyPlayed(tracks);
         })
     }
       
     useEffect(() => {
         getTopTracks();
         getNowPlaying();
+        getRecentlyPlayed();
     }, [])
 
 
@@ -97,7 +122,11 @@ const Home = () => {
                             Currently listening to . . .
                             <SpotifyDisplay nowPlaying={nowPlaying} />
                         </div>
-                    ) : null}
+                    ) : (
+                        <div>
+                            
+                        </div>
+                    )}
                 
                 </Fade>
             </div>
