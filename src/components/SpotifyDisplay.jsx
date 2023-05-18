@@ -5,8 +5,8 @@ const SpotifyDisplay = ({nowPlaying, recentlyPlayed, topTracks}) => {
         <div id="spotify">
 
             <div className="now-playing-container">
-                <Fade direction="up">
-                    <p>Currently Playing</p>
+                <p>Currently Playing</p>
+                <Fade direction="up" duration={1000} delay={1000}>
                     <Spotify 
                     className="now-playing-track"
                     // wide 
@@ -19,8 +19,8 @@ const SpotifyDisplay = ({nowPlaying, recentlyPlayed, topTracks}) => {
 
                 <div className="recently-played-container">
                     <p>Recently Played</p>
-                    {recentlyPlayed && recentlyPlayed.map((track) => (
-                        <Fade direction="up" duration={2000} delay={1000}>
+                    {recentlyPlayed && recentlyPlayed.map((track, i) => (
+                        <Fade direction="up" duration={1000} delay={1000 + (i*100)}>
                         <Spotify 
                             className="track" 
                             wide 
@@ -32,9 +32,9 @@ const SpotifyDisplay = ({nowPlaying, recentlyPlayed, topTracks}) => {
 
                 <div className="top-tracks-container">
                     <p>Top Tracks This Month</p>
-                    {topTracks && topTracks.map((track) => (
-                        <Fade direction="up" duration={2000} delay={100}>
-                            <Spotify 
+                    {topTracks && topTracks.map((track, i) => (
+                        <Fade direction="up" duration={1000} delay={1000 + (i*100)}>
+                        <Spotify 
                             className="track" 
                             wide 
                             link={`https://open.spotify.com/track/${track.songID}`} 
