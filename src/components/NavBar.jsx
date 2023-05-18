@@ -12,35 +12,35 @@ const NavBar = ({setSection}) => {
         <div id="navbar">
             <ul>
                 <li className="navbar-item">
-                    <a href="#home" className="effect-underline"
+                    <a href="#home" className="effect-underline effect-shine"
                     onClick={() => {
                         setSection(0);
                     }}
                     >/home</a>
                 </li>
                 <li className="navbar-item">
-                    <a href="#about" className="effect-underline"
+                    <a href="#about" className="effect-underline effect-shine"
                     onClick={() => {
                         setSection(1);
                     }}
                     >/about</a>
                 </li>
                 <li className="navbar-item">
-                    <a href="#experience" className="effect-underline"
+                    <a href="#experience" className="effect-underline effect-shine"
                     onClick={() => {
                         setSection(2);
                     }}
                     >/experience</a>
                 </li>
                 <li className="navbar-item">
-                    <a href="#projects" className="effect-underline"
+                    <a href="#projects" className="effect-underline effect-shine"
                     onClick={() => {
                         setSection(3);
                     }}
                     >/projects</a>
                 </li>
                 <li className="navbar-item">
-                    <a href="#gallery" className="effect-underline"
+                    <a href="#gallery" className="effect-underline effect-shine"
                     onClick={() => {
                         setSection(4);
                     }}
