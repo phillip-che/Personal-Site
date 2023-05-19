@@ -81,7 +81,8 @@ const Home = () => {
                 title: track.name,
             }));
             setTopTracks(tracks);
-            console.log(tracks)
+            console.log(tracks);
+            console.log(response);
         })
     }
 
@@ -102,11 +103,13 @@ const Home = () => {
             }
             const tracks = response.data.items.slice(0, num).map((track) => ({
                 songID: track.track.id,
+                playedAt: track.played_at,
                 artist: track.track.artists.map((_artist) => _artist.name).join(', '),
                 songUrl: track.track.external_urls.spotify,
                 title: track.track.name,
             }));
             console.log(tracks);
+            console.log(response);
             setRecentlyPlayed(tracks);
         })
     }
@@ -126,7 +129,7 @@ const Home = () => {
                     </div>
                 </Fade>
                 <Fade direction="right" triggerOnce>
-                    <p>you're average boba enjoyer trying to navigate through the struggles of being an aspiring software engineer.</p>
+                    <p>you're average boba enjoyer from socal trying to navigate through the struggles of becoming a software engineer.</p>
                     <p>other interests include real estate, personal finance, and reselling</p>
                 </Fade>
                     {/* what i'm listening to: display spotify 5 most recently played tracks */}
