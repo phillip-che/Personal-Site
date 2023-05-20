@@ -8,7 +8,7 @@
 }
 
 #footer p {
-    color: #9BA4B5;
+    color: var(--hover);
     font-size: 14px;
 }
 

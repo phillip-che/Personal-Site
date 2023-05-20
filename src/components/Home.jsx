@@ -129,10 +129,10 @@ const Home = () => {
                     </div>
                 </Fade>
                 <Fade direction="right" triggerOnce>
-                    <p>you're average boba enjoyer from socal trying to navigate through the struggles of becoming a software engineer.</p>
-                    <p>other interests include real estate, personal finance, and reselling</p>
+                    <p>your average boba enjoyer from socal trying to navigate through the struggles of becoming a software engineer.</p>
+                    <p>i'm probably playing video games with friends, listening to music, or watching Netflix right now.</p>
+                    <p>this is what I'm listening to on Spotify these days. . .</p>
                 </Fade>
-                    {/* what i'm listening to: display spotify 5 most recently played tracks */}
                     <SpotifyDisplay 
                     nowPlaying={nowPlaying}
                     recentlyPlayed={recentlyPlayed}
