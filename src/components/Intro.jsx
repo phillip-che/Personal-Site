@@ -6,17 +6,7 @@ const Intro = () => {
     return (
         <Fade triggerOnce direction="up" cascade>
         <div id="intro">
-            hi, <span className="name">phillip</span> here
-            {/* <span className="name">phillip che</span> */}
-            {/* <Typewriter 
-            onInit={(typewriter) => {
-                typewriter
-                .changeDelay(75)
-                .typeString("hi, <strong><span style='color: #E94560;'> phillip <span></strong> here")
-                .start();
-            }}
-            /> */}
-            
+            hi, <span className="name">phillip</span> here            
             <div className="description">
                 <span> I code occasionally. </span>
                 <div className="bio">

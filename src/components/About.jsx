@@ -20,7 +20,6 @@ const About = () => {
                                 <p>
                                     Apart from academics, I also run an online sneaker reselling community and business called <a className="effect-shine" href="https://www.solacenotify.com/" target="_blank">Solace Notify</a>. My other hobbies and interests include real estate, personal finance, and custom mechanical keyboards!
                                 </p>
-                                {/* maybe include other interests here: real estate, personal finance, custom mechanical keyboards*/}
                             </Fade>
                         </div>
                         <img className="about-image" src={me}></img>

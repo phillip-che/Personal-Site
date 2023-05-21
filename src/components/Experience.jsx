@@ -23,7 +23,6 @@ const Experience = () => {
                     </div>
                 </Fade>
                 <div className="skills-container">
-                    {/* <span>Relevant Technologies</span> */}
                     <ul className="tech-stack">
                         {tech_stack.map((item, i) => (
                             <Fade 
