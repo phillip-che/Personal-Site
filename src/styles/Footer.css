@@ -17,3 +17,9 @@
         display: none;
     }
 }
+
+@media only screen and (max-width: 1400px) {
+    #footer p {
+        font-size: 10px;
+    }
+}
