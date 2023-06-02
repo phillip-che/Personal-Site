@@ -43,3 +43,7 @@ export default App
 // popular resolutions: 
 // 1920 x 1080
 // 1366 × 768
+// possible additions:
+// theme customizer OR light/dark mode
+// chatbot that answers questions about me
+// display last active if not playing a song on spotify
