@@ -43,3 +43,4 @@ export default App
 // popular resolutions: 
 // 1920 x 1080
 // 1366 × 768
+// add last active when not playing music on spotify or add when exactly you listened to each song in recently played
