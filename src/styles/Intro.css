@@ -31,7 +31,7 @@
     font-weight: bold;
 }
 
-/* @media only screen and (max-width: 1000px) {
+/* @media only screen and (max-width: 600px) {
     #intro {
         width: 100%;
         font-size: 50px;
@@ -46,9 +46,16 @@
     #intro {
         width: 100%;
         font-size: 50px;
+        margin-left: 8%;
     }
 
     .description {
         font-size: 25px;
+    }
+}
+
+@media only screen and (max-width: 600px) {
+    #intro {
+        margin-left: 15%;
     }
 }

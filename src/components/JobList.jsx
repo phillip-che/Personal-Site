@@ -40,9 +40,12 @@ const JobList  = () => {
 
   const jobList = {
         // "Amazon": {
-        //     position: "",
-        //     dates: "",
-        //     points: ["", ""],
+        //     position: "Software Development Engineer",
+        //     dates: "May 2023 – Aug 2023",
+        //     points: [
+        //         "Won hackathon by modifying components on branded lists in TypeScript to boost internal testing configurability by 20%.",
+        //         "Implementing swappable items feature using Java and TypeScript to enable customers to replace product suggestions on Amazon Fresh widget."
+        //     ],
         // },
         "Solace Notify": {
             position: "Owner and Chief Technical Officer",

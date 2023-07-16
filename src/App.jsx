@@ -44,3 +44,7 @@ export default App
 // 1920 x 1080
 // 1366 × 768
 // add last active when not playing music on spotify or add when exactly you listened to each song in recently played
+// possible additions:
+// theme customizer OR light/dark mode
+// chatbot that answers questions about me
+// display last active if not playing a song on spotify
