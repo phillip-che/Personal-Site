@@ -39,14 +39,16 @@ const JobList  = () => {
   };
 
   const jobList = {
-        // "Amazon": {
-        //     position: "Software Development Engineer",
-        //     dates: "May 2023 – Aug 2023",
-        //     points: [
-        //         "Won hackathon by modifying components on branded lists in TypeScript to boost internal testing configurability by 20%.",
-        //         "Implementing swappable items feature using Java and TypeScript to enable customers to replace product suggestions on Amazon Fresh widget."
-        //     ],
-        // },
+        "Amazon": {
+            position: "Software Development Engineer Intern",
+            dates: "May 2023 – Aug 2023",
+            points: [
+                "Won hackathon by modifying components on branded lists in TypeScript to boost internal testing configurability by 20%.",
+                "Engineered a scalable feature using Java, TypeScript, and internal frameworks to enable customers to replace product suggestions with backup items on Amazon Fresh widget.",
+                "Refactored code to optimize bulk add-to-cart confirmation modal content update logic and loading latency by 60%.",
+                "Achieved 94% code coverage by integrating unit tests in TypeScript using Jest."
+            ],
+        },
         "Solace Notify": {
             position: "Owner and Chief Technical Officer",
             dates: "Apr 2019 – Present",
