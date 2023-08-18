@@ -22,6 +22,7 @@ import img9 from "../assets/sunset.jpg"
 import img10 from "../assets/art.jpg"
 import img11 from "../assets/beach.jpg"
 import img12 from "../assets/fireworks.jpg"
+import img13 from "../assets/applepark.jpg"
 
 const GalleryCards = () => {
     return (
@@ -131,6 +132,14 @@ const GalleryCards = () => {
                         <h5>Laguna Beach</h5>
                         <h6>6/4/23</h6>
                         <p>illegally parked to catch these fireworks</p>
+                    </div>
+                </SwiperSlide>
+                <SwiperSlide>
+                    <img className="card-img" src={img13} />
+                    <div className="card-caption">
+                        <h5>Apple Park</h5>
+                        <h6>8/14/23</h6>
+                        <p>steve jobs did not let us in the ring</p>
                     </div>
                 </SwiperSlide>
             </Swiper>
