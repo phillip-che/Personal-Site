@@ -43,10 +43,9 @@ const JobList  = () => {
             position: "Software Development Engineer Intern",
             dates: "May 2023 – Aug 2023",
             points: [
-                "Won hackathon by modifying components on branded lists in TypeScript to boost internal testing configurability by 20%.",
-                "Engineered a scalable feature using Java, TypeScript, and internal frameworks to enable customers to replace product suggestions with backup items on Amazon Fresh widget.",
-                "Refactored code to optimize bulk add-to-cart confirmation modal content update logic and loading latency by 60%.",
-                "Achieved 94% code coverage by integrating unit tests in TypeScript using Jest."
+                "Placed 1st in organizational hackathon by collaborating with team to implement optional frontend components on branded lists in TypeScript to boost internal testing configurability by 20%.",
+                "Refactored code to optimize bulk add-to-cart confirmation pop-up content update logic and loading latency by 60%",
+                "Engineered a scalable feature on Amazon Fresh widget using Java, TypeScript, and internal frontend frameworks to enable shoppers to replace product suggestions on branded lists with up to 3 backup items."
             ],
         },
         "Solace Notify": {
