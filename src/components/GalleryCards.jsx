@@ -23,7 +23,7 @@ import img10 from "../assets/art.jpg"
 import img11 from "../assets/beach.jpg"
 import img12 from "../assets/fireworks.jpg"
 import img13 from "../assets/applepark.jpg"
-import img14 from "../assets/sleep.JPG"
+import img14 from "../assets/sleep.jpg"
 
 const GalleryCards = () => {
     return (
