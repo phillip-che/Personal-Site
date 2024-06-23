@@ -1,15 +1,22 @@
 import "../styles/Projects.css";
 import { Fade } from "react-awesome-reveal";
-import React, { useState } from 'react';
+import { useState } from 'react';
 import Carousel from "react-bootstrap/Carousel";
 import soleexchange from "../assets/soleexchange1.png"
 import jit from "../assets/jit.jpg"
 import spotifydash from "../assets/spotifydash.png"
 import GitHubIcon from '@mui/icons-material/GitHub';
+import cypherchat from "../assets/cypherchat.png";
 
 const Projects = () => {
 
     const projectList = {
+        "Cypher Chat": {
+            description: "Secure client-server chat web app enabling real-time and private communication.",
+            tech: "TypeScript, React.js, Next.js, Node.js, Express.js, AWS",
+            github: "https://github.com/phillip-che/ChatApplication",
+            img: cypherchat
+        },
         "Sole Exchange": {
             description: "Forum that allows users to post, interact, and search about anything sneaker related.",
             tech: "JavaScript, React.js, Node.js, Supabase",
@@ -32,7 +39,7 @@ const Projects = () => {
 
     const [index, setIndex] = useState(0);
 
-    const handleSelect = (selectedIndex, e) => {
+    const handleSelect = (selectedIndex) => {
         setIndex(selectedIndex);
     };
     
