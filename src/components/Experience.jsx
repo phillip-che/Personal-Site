@@ -7,12 +7,16 @@ const Experience = () => {
     const tech_stack = [
         "Java",
         "JavaScript",
+        "Typescript",
         "Python",
+        "Kotlin",
         "React.js",
         "Node.js",
         "HTML/CSS",
+        "AWS",
+        "MongoDB",
         "MySQL",
-        "Supabase"
+        "PostgreSQL"
     ];
 
     return (
@@ -26,6 +30,7 @@ const Experience = () => {
                     <ul className="tech-stack">
                         {tech_stack.map((item, i) => (
                             <Fade 
+                            key={i}
                             triggerOnce
                             direction='up' 
                             delay={`${i*5}`} 
