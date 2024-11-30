@@ -131,7 +131,7 @@ const Home = () => {
                 <Fade direction="right" triggerOnce>
                     <p>your average boba enjoyer from socal trying to navigate through the struggles of becoming a software engineer.</p>
                     <p>i'm probably playing video games with friends, listening to music, or watching Netflix right now.</p>
-                    <p>this is what I'm listening to on Spotify these days. . .</p>
+                    <p>this is what i'm listening to on Spotify these days. . .</p>
                 </Fade>
                     <SpotifyDisplay 
                     nowPlaying={nowPlaying}
